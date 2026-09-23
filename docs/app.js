@@ -28,8 +28,9 @@
 
   const state = {
     meta: null,
-    category: store.get("category", "all"),
-    difficulty: store.get("difficulty", "all"),
+    // Multi-select filters; an empty list means "All".
+    categories: store.get("categories", []).filter((v) => typeof v === "string"),
+    levels: store.get("levels", []).filter((v) => typeof v === "string"),
     current: null,
     brief: null,
     done: [],
@@ -80,7 +81,9 @@
       $("#cardDomain").textContent = "Check your connection and refresh.";
       return;
     }
-    if (state.category !== "all" && !state.meta.categories.some((c) => c.slug === state.category)) state.category = "all";
+    const known = new Set(state.meta.categories.map((c) => c.slug));
+    state.categories = state.categories.filter((slug) => known.has(slug));
+    state.levels = state.levels.filter((level) => LEVELS.includes(level) && level !== "all");
     renderFilters();
     renderRecent();
     await refreshLikes();
@@ -140,55 +143,79 @@
   }
 
   // ---------- Filters (left rail) ----------
+  // Checkbox lists: pick any mix of categories and levels. "All" clears the list.
+  const CHECK = `<span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2.5 6.5l2.2 2.2L9.5 3.5" /></svg></span>`;
+
   function renderFilters() {
     const cats = [{ slug: "all", name: "All" }, ...state.meta.categories];
-    const limit = VISIBLE.categoryGroup;
     $("#categoryList").innerHTML = cats
-      .map((c, i) => {
-        const selected = c.slug === state.category;
-        // The selected category always stays visible, even when the list is collapsed.
-        const extra = i >= limit && !selected ? " is-extra" : "";
-        return `<button class="rail-item${extra}" role="radio" type="button" data-slug="${c.slug}" aria-checked="${selected}">${escape(c.name)}</button>`;
-      })
+      .map(
+        (c) => `<button class="rail-item" role="checkbox" type="button" data-value="${c.slug}" aria-checked="false">
+          ${CHECK}<span class="rail-label">${escape(c.name)}</span>
+        </button>`
+      )
       .join("");
-    syncCollapse("categoryGroup");
-    $("#categoryList").querySelectorAll("button").forEach((b) =>
-      b.addEventListener("click", () => {
-        state.category = b.dataset.slug;
-        store.set("category", state.category);
-        renderFilters();
-        draw();
-      })
-    );
 
     $("#levelList").innerHTML = LEVELS.map(
-      (d) => `<button class="rail-item" role="radio" type="button" data-d="${d}" aria-checked="${d === state.difficulty}">
-        <span>${d === "all" ? "Any level" : d}</span>${d === "all" ? "" : barsHtml(LEVEL_NUM[d])}
+      (d) => `<button class="rail-item" role="checkbox" type="button" data-value="${d}" aria-checked="false">
+        ${CHECK}<span class="rail-label">${d === "all" ? "Any level" : d}</span>${d === "all" ? "" : barsHtml(LEVEL_NUM[d])}
       </button>`
     ).join("");
-    $("#levelList").querySelectorAll("button").forEach((b) =>
+
+    bindFilterList("#categoryList", "categories");
+    bindFilterList("#levelList", "levels");
+    syncFilters();
+  }
+
+  function bindFilterList(selector, key) {
+    $(selector).querySelectorAll(".rail-item").forEach((b) =>
       b.addEventListener("click", () => {
-        state.difficulty = b.dataset.d;
-        store.set("difficulty", state.difficulty);
-        renderFilters();
-        draw();
+        const value = b.dataset.value;
+        if (value === "all") {
+          state[key] = [];
+        } else {
+          const next = new Set(state[key]);
+          next.has(value) ? next.delete(value) : next.add(value);
+          state[key] = [...next];
+        }
+        store.set(key, state[key]);
+        syncFilters();
+        drawSoon();
       })
     );
+  }
 
-    // Keep the selected chip in view on mobile, where the rail scrolls sideways.
-    if (isSheet()) {
-      document.querySelectorAll('.rail-item[aria-checked="true"]').forEach((el) => el.scrollIntoView({ block: "nearest", inline: "nearest" }));
-    }
+  // Update checked states in place, so the lists don't jump or lose scroll position.
+  function syncFilters() {
+    const limit = VISIBLE.categoryGroup;
+    $("#categoryList").querySelectorAll(".rail-item").forEach((b, i) => {
+      const checked = b.dataset.value === "all" ? !state.categories.length : state.categories.includes(b.dataset.value);
+      b.setAttribute("aria-checked", String(checked));
+      // Selected categories always stay visible, even when the list is collapsed.
+      b.classList.toggle("is-extra", i >= limit && !checked);
+    });
+    $("#levelList").querySelectorAll(".rail-item").forEach((b) => {
+      const checked = b.dataset.value === "all" ? !state.levels.length : state.levels.includes(b.dataset.value);
+      b.setAttribute("aria-checked", String(checked));
+    });
+    syncCollapse("categoryGroup");
+  }
+
+  // Wait a beat after each tick so picking several filters draws only once.
+  let drawTimer = null;
+  function drawSoon() {
+    clearTimeout(drawTimer);
+    drawTimer = setTimeout(draw, 350);
   }
 
   // ---------- Drawing ----------
   async function draw() {
-    const key = `${state.category}|${state.difficulty}`;
+    const key = `${[...state.categories].sort().join(",") || "all"}|${[...state.levels].sort().join(",") || "all"}`;
     const seen = state.seen[key] || [];
     try {
       const result = await api("/challenges/random", {
         method: "POST",
-        body: { category: state.category, difficulty: state.difficulty, seen, exclude: state.current && state.current.id },
+        body: { category: state.categories, difficulty: state.levels, seen, exclude: state.current && state.current.id },
       });
       state.seen[key] = result.reset ? [result.challenge.id] : [...seen, result.challenge.id];
       store.set("seen", state.seen);

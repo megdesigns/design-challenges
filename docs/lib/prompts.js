@@ -49,11 +49,17 @@
   function createLibrary(challenges) {
     const byId = new Map(challenges.map((c) => [c.id, c]));
 
+    // Filters accept a single value or a list; empty / "all" means no filter.
+    const toSet = (value) => {
+      const list = (Array.isArray(value) ? value : [value]).filter((v) => typeof v === "string" && v && v !== "all");
+      return list.length ? new Set(list) : null;
+    };
+
     function filter({ category, difficulty } = {}) {
+      const categories = toSet(category);
+      const levels = toSet(difficulty);
       return challenges.filter(
-        (c) =>
-          (!category || category === "all" || c.categorySlug === category) &&
-          (!difficulty || difficulty === "all" || c.difficulty === difficulty)
+        (c) => (!categories || categories.has(c.categorySlug)) && (!levels || levels.has(c.difficulty))
       );
     }
 

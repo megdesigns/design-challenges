@@ -6,7 +6,8 @@ challenge to unlock a short brief with what to think about, what to avoid, and
 a "done when" checklist.
 
 - **600 challenges** across 11 categories and 3 levels, drawn at random without
-  repeats until you've seen the whole pool.
+  repeats until you've seen the whole pool. Tick any mix of categories and
+  levels to narrow the pool.
 - **Private by design.** No accounts, no server, no tracking. Your likes,
   checklist progress, recent challenges, filters and theme are saved in your
   own browser.
