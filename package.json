@@ -1,0 +1,14 @@
+{
+  "name": "design-challenge-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Random product design practice challenges with a short brief for each one. Fully static; everything is saved in the visitor's browser.",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/check.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,1205 @@
+600 DESIGN PRACTICE PROMPTS
+Random exercises for sharpening product, UI, UX, visual, systems, research, interaction, and motion design skills.
+
+Format: [Difficulty] [Category] Prompt
+Difficulty levels: Beginner / Intermediate / Advanced
+
+001. [Beginner] [Mobile screens] Design an onboarding flow that gets a new user to value in under three screens for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+002. [Intermediate] [Mobile screens] Design a home screen that prioritizes one primary action without hiding secondary tasks for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+003. [Advanced] [Mobile screens] Design a search experience with recent searches, suggestions, filters, and an empty state for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+004. [Beginner] [Mobile screens] Design a detail screen that makes a complex decision feel simple for a accessibility product. Limit yourself to one core user goal and keep the information architecture simple.
+
+005. [Intermediate] [Mobile screens] Design a checkout flow with clear progress, editable details, and error recovery for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+006. [Advanced] [Mobile screens] Design a profile screen that balances identity, settings, and activity for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+007. [Beginner] [Mobile screens] Design a notification center that helps users distinguish urgent from informational updates for a event planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+008. [Intermediate] [Mobile screens] Design a saved-items experience with folders, sorting, and bulk actions for a pet care product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+009. [Advanced] [Mobile screens] Design a mobile form for a task users may need to complete one-handed for a logistics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+010. [Beginner] [Mobile screens] Design a comparison screen for choosing between three options for a subscription management product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+011. [Intermediate] [Mobile screens] Design a permissions request that explains value before asking for system access for a grocery shopping product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+012. [Advanced] [Mobile screens] Design an offline state that still gives the user something useful to do for a healthcare scheduling product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+013. [Beginner] [Mobile screens] Design a first-use empty state that teaches the product through action for a project management product. Limit yourself to one core user goal and keep the information architecture simple.
+
+014. [Intermediate] [Mobile screens] Design a mobile calendar view for quickly finding and changing a booking for a freelancing product. Account for accessibility, realistic content, and at least one non-happy path.
+
+015. [Advanced] [Mobile screens] Design a progress screen that motivates without turning into a generic streak UI for a restaurant operations product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+016. [Beginner] [Mobile screens] Design an onboarding flow that gets a new user to value in under three screens for a language learning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+017. [Intermediate] [Mobile screens] Design a home screen that prioritizes one primary action without hiding secondary tasks for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+018. [Advanced] [Mobile screens] Design a search experience with recent searches, suggestions, filters, and an empty state for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+019. [Beginner] [Mobile screens] Design a detail screen that makes a complex decision feel simple for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+020. [Intermediate] [Mobile screens] Design a checkout flow with clear progress, editable details, and error recovery for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+021. [Advanced] [Mobile screens] Design a profile screen that balances identity, settings, and activity for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+022. [Beginner] [Mobile screens] Design a notification center that helps users distinguish urgent from informational updates for a accessibility product. Limit yourself to one core user goal and keep the information architecture simple.
+
+023. [Intermediate] [Mobile screens] Design a saved-items experience with folders, sorting, and bulk actions for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+024. [Advanced] [Mobile screens] Design a mobile form for a task users may need to complete one-handed for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+025. [Beginner] [Mobile screens] Design a comparison screen for choosing between three options for a event planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+026. [Intermediate] [Mobile screens] Design a permissions request that explains value before asking for system access for a pet care product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+027. [Advanced] [Mobile screens] Design an offline state that still gives the user something useful to do for a logistics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+028. [Beginner] [Mobile screens] Design a first-use empty state that teaches the product through action for a subscription management product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+029. [Intermediate] [Mobile screens] Design a mobile calendar view for quickly finding and changing a booking for a grocery shopping product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+030. [Advanced] [Mobile screens] Design a progress screen that motivates without turning into a generic streak UI for a healthcare scheduling product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+031. [Beginner] [Mobile screens] Design an onboarding flow that gets a new user to value in under three screens for a sustainability product. Limit yourself to one core user goal and keep the information architecture simple.
+
+032. [Intermediate] [Mobile screens] Design a home screen that prioritizes one primary action without hiding secondary tasks for a real estate product. Account for accessibility, realistic content, and at least one non-happy path.
+
+033. [Advanced] [Mobile screens] Design a search experience with recent searches, suggestions, filters, and an empty state for a HR product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+034. [Beginner] [Mobile screens] Design a detail screen that makes a complex decision feel simple for a language learning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+035. [Intermediate] [Mobile screens] Design a checkout flow with clear progress, editable details, and error recovery for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+036. [Advanced] [Mobile screens] Design a profile screen that balances identity, settings, and activity for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+037. [Beginner] [Mobile screens] Design a notification center that helps users distinguish urgent from informational updates for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+038. [Intermediate] [Mobile screens] Design a saved-items experience with folders, sorting, and bulk actions for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+039. [Advanced] [Mobile screens] Design a mobile form for a task users may need to complete one-handed for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+040. [Beginner] [Mobile screens] Design a comparison screen for choosing between three options for a accessibility product. Limit yourself to one core user goal and keep the information architecture simple.
+
+041. [Intermediate] [Mobile screens] Design a permissions request that explains value before asking for system access for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+042. [Advanced] [Mobile screens] Design an offline state that still gives the user something useful to do for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+043. [Beginner] [Mobile screens] Design a first-use empty state that teaches the product through action for a event planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+044. [Intermediate] [Mobile screens] Design a mobile calendar view for quickly finding and changing a booking for a pet care product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+045. [Advanced] [Mobile screens] Design a progress screen that motivates without turning into a generic streak UI for a logistics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+046. [Beginner] [Mobile screens] Design an onboarding flow that gets a new user to value in under three screens for a weather product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+047. [Intermediate] [Mobile screens] Design a home screen that prioritizes one primary action without hiding secondary tasks for a music discovery product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+048. [Advanced] [Mobile screens] Design a search experience with recent searches, suggestions, filters, and an empty state for a gaming product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+049. [Beginner] [Mobile screens] Design a detail screen that makes a complex decision feel simple for a sustainability product. Limit yourself to one core user goal and keep the information architecture simple.
+
+050. [Intermediate] [Mobile screens] Design a checkout flow with clear progress, editable details, and error recovery for a real estate product. Account for accessibility, realistic content, and at least one non-happy path.
+
+051. [Advanced] [Mobile screens] Design a profile screen that balances identity, settings, and activity for a HR product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+052. [Beginner] [Mobile screens] Design a notification center that helps users distinguish urgent from informational updates for a language learning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+053. [Intermediate] [Mobile screens] Design a saved-items experience with folders, sorting, and bulk actions for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+054. [Advanced] [Mobile screens] Design a mobile form for a task users may need to complete one-handed for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+055. [Beginner] [Mobile screens] Design a comparison screen for choosing between three options for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+056. [Intermediate] [Mobile screens] Design a permissions request that explains value before asking for system access for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+057. [Advanced] [Mobile screens] Design an offline state that still gives the user something useful to do for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+058. [Beginner] [Mobile screens] Design a first-use empty state that teaches the product through action for a accessibility product. Limit yourself to one core user goal and keep the information architecture simple.
+
+059. [Intermediate] [Mobile screens] Design a mobile calendar view for quickly finding and changing a booking for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+060. [Advanced] [Mobile screens] Design a progress screen that motivates without turning into a generic streak UI for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+061. [Beginner] [Mobile screens] Design an onboarding flow that gets a new user to value in under three screens for a home organization product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+062. [Intermediate] [Mobile screens] Design a home screen that prioritizes one primary action without hiding secondary tasks for a nonprofit fundraising product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+063. [Advanced] [Mobile screens] Design a search experience with recent searches, suggestions, filters, and an empty state for a legal workflows product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+064. [Beginner] [Mobile screens] Design a detail screen that makes a complex decision feel simple for a weather product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+065. [Intermediate] [Mobile screens] Design a checkout flow with clear progress, editable details, and error recovery for a music discovery product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+066. [Advanced] [Mobile screens] Design a profile screen that balances identity, settings, and activity for a gaming product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+067. [Beginner] [Mobile screens] Design a notification center that helps users distinguish urgent from informational updates for a sustainability product. Limit yourself to one core user goal and keep the information architecture simple.
+
+068. [Intermediate] [Mobile screens] Design a saved-items experience with folders, sorting, and bulk actions for a real estate product. Account for accessibility, realistic content, and at least one non-happy path.
+
+069. [Advanced] [Mobile screens] Design a mobile form for a task users may need to complete one-handed for a HR product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+070. [Beginner] [Mobile screens] Design a comparison screen for choosing between three options for a language learning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+071. [Intermediate] [Mobile screens] Design a permissions request that explains value before asking for system access for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+072. [Advanced] [Mobile screens] Design an offline state that still gives the user something useful to do for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+073. [Beginner] [Mobile screens] Design a first-use empty state that teaches the product through action for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+074. [Intermediate] [Mobile screens] Design a mobile calendar view for quickly finding and changing a booking for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+075. [Advanced] [Mobile screens] Design a progress screen that motivates without turning into a generic streak UI for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+076. [Beginner] [Mobile screens] Design an onboarding flow that gets a new user to value in under three screens for a car ownership product. Limit yourself to one core user goal and keep the information architecture simple.
+
+077. [Intermediate] [Mobile screens] Design a home screen that prioritizes one primary action without hiding secondary tasks for a fitness coaching product. Account for accessibility, realistic content, and at least one non-happy path.
+
+078. [Advanced] [Mobile screens] Design a search experience with recent searches, suggestions, filters, and an empty state for a e-commerce product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+079. [Beginner] [Mobile screens] Design a detail screen that makes a complex decision feel simple for a home organization product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+080. [Intermediate] [Mobile screens] Design a checkout flow with clear progress, editable details, and error recovery for a nonprofit fundraising product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+081. [Beginner] [Websites & landing pages] Design a conversion-focused landing page for a new product with one clear CTA for a cybersecurity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+082. [Intermediate] [Websites & landing pages] Design a homepage that explains an unfamiliar service in the first viewport for a banking product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+083. [Advanced] [Websites & landing pages] Design a pricing page for three plans with meaningful differentiation for a car ownership product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+084. [Beginner] [Websites & landing pages] Design a portfolio site that makes the creator's strongest work obvious within 10 seconds for a fitness coaching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+085. [Intermediate] [Websites & landing pages] Design a launch page for a product that has no testimonials yet for a e-commerce product. Account for accessibility, realistic content, and at least one non-happy path.
+
+086. [Advanced] [Websites & landing pages] Design a service-business website that turns trust signals into booking intent for a home organization product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+087. [Beginner] [Websites & landing pages] Design an editorial homepage that supports both browsing and deep reading for a nonprofit fundraising product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+088. [Intermediate] [Websites & landing pages] Design a waitlist page that makes joining feel worthwhile without overpromising for a legal workflows product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+089. [Advanced] [Websites & landing pages] Design a product marketing page that demonstrates the workflow instead of listing features for a weather product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+090. [Beginner] [Websites & landing pages] Design a nonprofit campaign page that communicates impact and makes donating easy for a music discovery product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+091. [Intermediate] [Websites & landing pages] Design a comparison page that positions a product against an old way of working for a gaming product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+092. [Advanced] [Websites & landing pages] Design a careers page that communicates culture through evidence rather than slogans for a sustainability product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+093. [Beginner] [Websites & landing pages] Design a conversion-focused landing page for a new product with one clear CTA for a customer support product. Limit yourself to one core user goal and keep the information architecture simple.
+
+094. [Intermediate] [Websites & landing pages] Design a homepage that explains an unfamiliar service in the first viewport for a social communities product. Account for accessibility, realistic content, and at least one non-happy path.
+
+095. [Advanced] [Websites & landing pages] Design a pricing page for three plans with meaningful differentiation for a hotel booking product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+096. [Beginner] [Websites & landing pages] Design a portfolio site that makes the creator's strongest work obvious within 10 seconds for a meal planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+097. [Intermediate] [Websites & landing pages] Design a launch page for a product that has no testimonials yet for a creator tools product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+098. [Advanced] [Websites & landing pages] Design a service-business website that turns trust signals into booking intent for a reading product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+099. [Beginner] [Websites & landing pages] Design an editorial homepage that supports both browsing and deep reading for a cybersecurity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+100. [Intermediate] [Websites & landing pages] Design a waitlist page that makes joining feel worthwhile without overpromising for a banking product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+101. [Advanced] [Websites & landing pages] Design a product marketing page that demonstrates the workflow instead of listing features for a car ownership product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+102. [Beginner] [Websites & landing pages] Design a nonprofit campaign page that communicates impact and makes donating easy for a fitness coaching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+103. [Intermediate] [Websites & landing pages] Design a comparison page that positions a product against an old way of working for a e-commerce product. Account for accessibility, realistic content, and at least one non-happy path.
+
+104. [Advanced] [Websites & landing pages] Design a careers page that communicates culture through evidence rather than slogans for a home organization product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+105. [Beginner] [Websites & landing pages] Design a conversion-focused landing page for a new product with one clear CTA for a restaurant operations product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+106. [Intermediate] [Websites & landing pages] Design a homepage that explains an unfamiliar service in the first viewport for a photo management product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+107. [Advanced] [Websites & landing pages] Design a pricing page for three plans with meaningful differentiation for a beauty services product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+108. [Beginner] [Websites & landing pages] Design a portfolio site that makes the creator's strongest work obvious within 10 seconds for a travel planning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+109. [Intermediate] [Websites & landing pages] Design a launch page for a product that has no testimonials yet for a AI productivity product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+110. [Advanced] [Websites & landing pages] Design a service-business website that turns trust signals into booking intent for a job searching product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+111. [Beginner] [Websites & landing pages] Design an editorial homepage that supports both browsing and deep reading for a customer support product. Limit yourself to one core user goal and keep the information architecture simple.
+
+112. [Intermediate] [Websites & landing pages] Design a waitlist page that makes joining feel worthwhile without overpromising for a social communities product. Account for accessibility, realistic content, and at least one non-happy path.
+
+113. [Advanced] [Websites & landing pages] Design a product marketing page that demonstrates the workflow instead of listing features for a hotel booking product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+114. [Beginner] [Websites & landing pages] Design a nonprofit campaign page that communicates impact and makes donating easy for a meal planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+115. [Intermediate] [Websites & landing pages] Design a comparison page that positions a product against an old way of working for a creator tools product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+116. [Advanced] [Websites & landing pages] Design a careers page that communicates culture through evidence rather than slogans for a reading product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+117. [Beginner] [Websites & landing pages] Design a conversion-focused landing page for a new product with one clear CTA for a logistics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+118. [Intermediate] [Websites & landing pages] Design a homepage that explains an unfamiliar service in the first viewport for a subscription management product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+119. [Advanced] [Websites & landing pages] Design a pricing page for three plans with meaningful differentiation for a grocery shopping product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+120. [Beginner] [Websites & landing pages] Design a portfolio site that makes the creator's strongest work obvious within 10 seconds for a healthcare scheduling product. Limit yourself to one core user goal and keep the information architecture simple.
+
+121. [Intermediate] [Websites & landing pages] Design a launch page for a product that has no testimonials yet for a project management product. Account for accessibility, realistic content, and at least one non-happy path.
+
+122. [Advanced] [Websites & landing pages] Design a service-business website that turns trust signals into booking intent for a freelancing product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+123. [Beginner] [Websites & landing pages] Design an editorial homepage that supports both browsing and deep reading for a restaurant operations product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+124. [Intermediate] [Websites & landing pages] Design a waitlist page that makes joining feel worthwhile without overpromising for a photo management product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+125. [Advanced] [Websites & landing pages] Design a product marketing page that demonstrates the workflow instead of listing features for a beauty services product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+126. [Beginner] [Websites & landing pages] Design a nonprofit campaign page that communicates impact and makes donating easy for a travel planning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+127. [Intermediate] [Websites & landing pages] Design a comparison page that positions a product against an old way of working for a AI productivity product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+128. [Advanced] [Websites & landing pages] Design a careers page that communicates culture through evidence rather than slogans for a job searching product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+129. [Beginner] [Websites & landing pages] Design a conversion-focused landing page for a new product with one clear CTA for a manufacturing product. Limit yourself to one core user goal and keep the information architecture simple.
+
+130. [Intermediate] [Websites & landing pages] Design a homepage that explains an unfamiliar service in the first viewport for a accessibility product. Account for accessibility, realistic content, and at least one non-happy path.
+
+131. [Advanced] [Websites & landing pages] Design a pricing page for three plans with meaningful differentiation for a remote work product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+132. [Beginner] [Websites & landing pages] Design a portfolio site that makes the creator's strongest work obvious within 10 seconds for a education product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+133. [Intermediate] [Websites & landing pages] Design a launch page for a product that has no testimonials yet for a event planning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+134. [Advanced] [Websites & landing pages] Design a service-business website that turns trust signals into booking intent for a pet care product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+135. [Beginner] [Websites & landing pages] Design an editorial homepage that supports both browsing and deep reading for a logistics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+136. [Intermediate] [Websites & landing pages] Design a waitlist page that makes joining feel worthwhile without overpromising for a subscription management product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+137. [Advanced] [Websites & landing pages] Design a product marketing page that demonstrates the workflow instead of listing features for a grocery shopping product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+138. [Beginner] [Websites & landing pages] Design a nonprofit campaign page that communicates impact and makes donating easy for a healthcare scheduling product. Limit yourself to one core user goal and keep the information architecture simple.
+
+139. [Intermediate] [Websites & landing pages] Design a comparison page that positions a product against an old way of working for a project management product. Account for accessibility, realistic content, and at least one non-happy path.
+
+140. [Advanced] [Websites & landing pages] Design a careers page that communicates culture through evidence rather than slogans for a freelancing product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+141. [Beginner] [Websites & landing pages] Design a conversion-focused landing page for a new product with one clear CTA for a HR product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+142. [Intermediate] [Websites & landing pages] Design a homepage that explains an unfamiliar service in the first viewport for a language learning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+143. [Advanced] [Websites & landing pages] Design a pricing page for three plans with meaningful differentiation for a personal finance product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+144. [Beginner] [Websites & landing pages] Design a portfolio site that makes the creator's strongest work obvious within 10 seconds for a sports analytics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+145. [Intermediate] [Websites & landing pages] Design a launch page for a product that has no testimonials yet for a public transit product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+146. [Advanced] [Websites & landing pages] Design a service-business website that turns trust signals into booking intent for a insurance product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+147. [Beginner] [Websites & landing pages] Design an editorial homepage that supports both browsing and deep reading for a manufacturing product. Limit yourself to one core user goal and keep the information architecture simple.
+
+148. [Intermediate] [Websites & landing pages] Design a waitlist page that makes joining feel worthwhile without overpromising for a accessibility product. Account for accessibility, realistic content, and at least one non-happy path.
+
+149. [Advanced] [Websites & landing pages] Design a product marketing page that demonstrates the workflow instead of listing features for a remote work product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+150. [Beginner] [Websites & landing pages] Design a nonprofit campaign page that communicates impact and makes donating easy for a education product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+151. [Beginner] [Web apps] Design a workspace where users create, organize, and revisit ongoing work for a gaming product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+152. [Intermediate] [Web apps] Design a split-view experience for browsing items while inspecting details for a sustainability product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+153. [Advanced] [Web apps] Design a collaborative editor with comments, presence, and version history for a real estate product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+154. [Beginner] [Web apps] Design a command-center web app that supports both novice and power users for a HR product. Limit yourself to one core user goal and keep the information architecture simple.
+
+155. [Intermediate] [Web apps] Design a multi-step creation flow with autosave and a useful draft state for a language learning product. Account for accessibility, realistic content, and at least one non-happy path.
+
+156. [Advanced] [Web apps] Design an AI-assisted workspace where generated output is editable and sources are visible for a personal finance product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+157. [Beginner] [Web apps] Design a web app for comparing, shortlisting, and deciding between options for a sports analytics product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+158. [Intermediate] [Web apps] Design a file-management experience with search, filters, preview, and bulk actions for a public transit product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+159. [Advanced] [Web apps] Design an inbox-style workflow where users triage incoming items for a insurance product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+160. [Beginner] [Web apps] Design a web app that turns a complicated setup process into manageable steps for a manufacturing product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+161. [Intermediate] [Web apps] Design a workspace where users create, organize, and revisit ongoing work for a car ownership product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+162. [Advanced] [Web apps] Design a split-view experience for browsing items while inspecting details for a fitness coaching product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+163. [Beginner] [Web apps] Design a collaborative editor with comments, presence, and version history for a e-commerce product. Limit yourself to one core user goal and keep the information architecture simple.
+
+164. [Intermediate] [Web apps] Design a command-center web app that supports both novice and power users for a home organization product. Account for accessibility, realistic content, and at least one non-happy path.
+
+165. [Advanced] [Web apps] Design a multi-step creation flow with autosave and a useful draft state for a nonprofit fundraising product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+166. [Beginner] [Web apps] Design an AI-assisted workspace where generated output is editable and sources are visible for a legal workflows product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+167. [Intermediate] [Web apps] Design a web app for comparing, shortlisting, and deciding between options for a weather product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+168. [Advanced] [Web apps] Design a file-management experience with search, filters, preview, and bulk actions for a music discovery product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+169. [Beginner] [Web apps] Design an inbox-style workflow where users triage incoming items for a gaming product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+170. [Intermediate] [Web apps] Design a web app that turns a complicated setup process into manageable steps for a sustainability product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+171. [Advanced] [Web apps] Design a workspace where users create, organize, and revisit ongoing work for a customer support product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+172. [Beginner] [Web apps] Design a split-view experience for browsing items while inspecting details for a social communities product. Limit yourself to one core user goal and keep the information architecture simple.
+
+173. [Intermediate] [Web apps] Design a collaborative editor with comments, presence, and version history for a hotel booking product. Account for accessibility, realistic content, and at least one non-happy path.
+
+174. [Advanced] [Web apps] Design a command-center web app that supports both novice and power users for a meal planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+175. [Beginner] [Web apps] Design a multi-step creation flow with autosave and a useful draft state for a creator tools product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+176. [Intermediate] [Web apps] Design an AI-assisted workspace where generated output is editable and sources are visible for a reading product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+177. [Advanced] [Web apps] Design a web app for comparing, shortlisting, and deciding between options for a cybersecurity product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+178. [Beginner] [Web apps] Design a file-management experience with search, filters, preview, and bulk actions for a banking product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+179. [Intermediate] [Web apps] Design an inbox-style workflow where users triage incoming items for a car ownership product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+180. [Advanced] [Web apps] Design a web app that turns a complicated setup process into manageable steps for a fitness coaching product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+181. [Beginner] [Web apps] Design a workspace where users create, organize, and revisit ongoing work for a project management product. Limit yourself to one core user goal and keep the information architecture simple.
+
+182. [Intermediate] [Web apps] Design a split-view experience for browsing items while inspecting details for a freelancing product. Account for accessibility, realistic content, and at least one non-happy path.
+
+183. [Advanced] [Web apps] Design a collaborative editor with comments, presence, and version history for a restaurant operations product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+184. [Beginner] [Web apps] Design a command-center web app that supports both novice and power users for a photo management product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+185. [Intermediate] [Web apps] Design a multi-step creation flow with autosave and a useful draft state for a beauty services product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+186. [Advanced] [Web apps] Design an AI-assisted workspace where generated output is editable and sources are visible for a travel planning product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+187. [Beginner] [Web apps] Design a web app for comparing, shortlisting, and deciding between options for a AI productivity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+188. [Intermediate] [Web apps] Design a file-management experience with search, filters, preview, and bulk actions for a job searching product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+189. [Advanced] [Web apps] Design an inbox-style workflow where users triage incoming items for a customer support product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+190. [Beginner] [Web apps] Design a web app that turns a complicated setup process into manageable steps for a social communities product. Limit yourself to one core user goal and keep the information architecture simple.
+
+191. [Intermediate] [Web apps] Design a workspace where users create, organize, and revisit ongoing work for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+192. [Advanced] [Web apps] Design a split-view experience for browsing items while inspecting details for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+193. [Beginner] [Web apps] Design a collaborative editor with comments, presence, and version history for a event planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+194. [Intermediate] [Web apps] Design a command-center web app that supports both novice and power users for a pet care product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+195. [Advanced] [Web apps] Design a multi-step creation flow with autosave and a useful draft state for a logistics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+196. [Beginner] [Web apps] Design an AI-assisted workspace where generated output is editable and sources are visible for a subscription management product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+197. [Intermediate] [Web apps] Design a web app for comparing, shortlisting, and deciding between options for a grocery shopping product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+198. [Advanced] [Web apps] Design a file-management experience with search, filters, preview, and bulk actions for a healthcare scheduling product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+199. [Beginner] [Web apps] Design an inbox-style workflow where users triage incoming items for a project management product. Limit yourself to one core user goal and keep the information architecture simple.
+
+200. [Intermediate] [Web apps] Design a web app that turns a complicated setup process into manageable steps for a freelancing product. Account for accessibility, realistic content, and at least one non-happy path.
+
+201. [Advanced] [Web apps] Design a workspace where users create, organize, and revisit ongoing work for a HR product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+202. [Beginner] [Web apps] Design a split-view experience for browsing items while inspecting details for a language learning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+203. [Intermediate] [Web apps] Design a collaborative editor with comments, presence, and version history for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+204. [Advanced] [Web apps] Design a command-center web app that supports both novice and power users for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+205. [Beginner] [Web apps] Design a multi-step creation flow with autosave and a useful draft state for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+206. [Beginner] [Web sections] Design a hero section that communicates value without relying on a dashboard mockup for a project management product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+207. [Intermediate] [Web sections] Design a feature section that explains one capability through a before-and-after story for a freelancing product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+208. [Advanced] [Web sections] Design a testimonial section that feels credible rather than decorative for a restaurant operations product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+209. [Beginner] [Web sections] Design an FAQ section for questions that block conversion for a photo management product. Limit yourself to one core user goal and keep the information architecture simple.
+
+210. [Intermediate] [Web sections] Design a case-study section that shows measurable outcomes and process for a beauty services product. Account for accessibility, realistic content, and at least one non-happy path.
+
+211. [Advanced] [Web sections] Design an integration section for a product that connects to many tools for a travel planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+212. [Beginner] [Web sections] Design a security and trust section that nontechnical users can understand for a AI productivity product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+213. [Intermediate] [Web sections] Design a footer that remains useful on a content-heavy website for a job searching product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+214. [Advanced] [Web sections] Design a comparison section that explains three approaches without a dense table for a customer support product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+215. [Beginner] [Web sections] Design a hero section that communicates value without relying on a dashboard mockup for a accessibility product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+216. [Intermediate] [Web sections] Design a feature section that explains one capability through a before-and-after story for a remote work product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+217. [Advanced] [Web sections] Design a testimonial section that feels credible rather than decorative for a education product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+218. [Beginner] [Web sections] Design an FAQ section for questions that block conversion for a event planning product. Limit yourself to one core user goal and keep the information architecture simple.
+
+219. [Intermediate] [Web sections] Design a case-study section that shows measurable outcomes and process for a pet care product. Account for accessibility, realistic content, and at least one non-happy path.
+
+220. [Advanced] [Web sections] Design an integration section for a product that connects to many tools for a logistics product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+221. [Beginner] [Web sections] Design a security and trust section that nontechnical users can understand for a subscription management product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+222. [Intermediate] [Web sections] Design a footer that remains useful on a content-heavy website for a grocery shopping product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+223. [Advanced] [Web sections] Design a comparison section that explains three approaches without a dense table for a healthcare scheduling product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+224. [Beginner] [Web sections] Design a hero section that communicates value without relying on a dashboard mockup for a sustainability product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+225. [Intermediate] [Web sections] Design a feature section that explains one capability through a before-and-after story for a real estate product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+226. [Advanced] [Web sections] Design a testimonial section that feels credible rather than decorative for a HR product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+227. [Beginner] [Web sections] Design an FAQ section for questions that block conversion for a language learning product. Limit yourself to one core user goal and keep the information architecture simple.
+
+228. [Intermediate] [Web sections] Design a case-study section that shows measurable outcomes and process for a personal finance product. Account for accessibility, realistic content, and at least one non-happy path.
+
+229. [Advanced] [Web sections] Design an integration section for a product that connects to many tools for a sports analytics product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+230. [Beginner] [Web sections] Design a security and trust section that nontechnical users can understand for a public transit product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+231. [Intermediate] [Web sections] Design a footer that remains useful on a content-heavy website for a insurance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+232. [Advanced] [Web sections] Design a comparison section that explains three approaches without a dense table for a manufacturing product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+233. [Beginner] [Web sections] Design a hero section that communicates value without relying on a dashboard mockup for a car ownership product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+234. [Intermediate] [Web sections] Design a feature section that explains one capability through a before-and-after story for a fitness coaching product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+235. [Advanced] [Web sections] Design a testimonial section that feels credible rather than decorative for a e-commerce product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+236. [Beginner] [Web sections] Design an FAQ section for questions that block conversion for a home organization product. Limit yourself to one core user goal and keep the information architecture simple.
+
+237. [Intermediate] [Web sections] Design a case-study section that shows measurable outcomes and process for a nonprofit fundraising product. Account for accessibility, realistic content, and at least one non-happy path.
+
+238. [Advanced] [Web sections] Design an integration section for a product that connects to many tools for a legal workflows product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+239. [Beginner] [Web sections] Design a security and trust section that nontechnical users can understand for a weather product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+240. [Intermediate] [Web sections] Design a footer that remains useful on a content-heavy website for a music discovery product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+241. [Advanced] [Web sections] Design a comparison section that explains three approaches without a dense table for a gaming product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+242. [Beginner] [Web sections] Design a hero section that communicates value without relying on a dashboard mockup for a job searching product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+243. [Intermediate] [Web sections] Design a feature section that explains one capability through a before-and-after story for a customer support product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+244. [Advanced] [Web sections] Design a testimonial section that feels credible rather than decorative for a social communities product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+245. [Beginner] [Web sections] Design an FAQ section for questions that block conversion for a hotel booking product. Limit yourself to one core user goal and keep the information architecture simple.
+
+246. [Intermediate] [Web sections] Design a case-study section that shows measurable outcomes and process for a meal planning product. Account for accessibility, realistic content, and at least one non-happy path.
+
+247. [Advanced] [Web sections] Design an integration section for a product that connects to many tools for a creator tools product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+248. [Beginner] [Web sections] Design a security and trust section that nontechnical users can understand for a reading product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+249. [Intermediate] [Web sections] Design a footer that remains useful on a content-heavy website for a cybersecurity product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+250. [Advanced] [Web sections] Design a comparison section that explains three approaches without a dense table for a banking product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+251. [Beginner] [Dashboards & internal tools] Design an operations dashboard that makes exceptions more prominent than normal activity for a logistics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+252. [Intermediate] [Dashboards & internal tools] Design an admin table with filtering, sorting, saved views, and bulk actions for a subscription management product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+253. [Advanced] [Dashboards & internal tools] Design a dashboard for monitoring performance across multiple locations for a grocery shopping product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+254. [Beginner] [Dashboards & internal tools] Design an approval queue where reviewers need enough context to act quickly for a healthcare scheduling product. Limit yourself to one core user goal and keep the information architecture simple.
+
+255. [Intermediate] [Dashboards & internal tools] Design a role-management screen for assigning granular permissions for a project management product. Account for accessibility, realistic content, and at least one non-happy path.
+
+256. [Advanced] [Dashboards & internal tools] Design an audit-log experience that helps users investigate what changed and why for a freelancing product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+257. [Beginner] [Dashboards & internal tools] Design a dashboard that surfaces anomalies without overwhelming users with alerts for a restaurant operations product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+258. [Intermediate] [Dashboards & internal tools] Design an internal tool for creating and managing reusable templates for a photo management product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+259. [Advanced] [Dashboards & internal tools] Design a case-management workspace with status, owner, history, and next action for a beauty services product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+260. [Beginner] [Dashboards & internal tools] Design an analytics dashboard that moves from overview to diagnosis for a travel planning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+261. [Intermediate] [Dashboards & internal tools] Design an inventory tool that highlights shortages, delays, and recommended actions for a AI productivity product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+262. [Advanced] [Dashboards & internal tools] Design a scheduling dashboard for teams, resources, and conflicts for a job searching product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+263. [Beginner] [Dashboards & internal tools] Design an operations dashboard that makes exceptions more prominent than normal activity for a manufacturing product. Limit yourself to one core user goal and keep the information architecture simple.
+
+264. [Intermediate] [Dashboards & internal tools] Design an admin table with filtering, sorting, saved views, and bulk actions for a accessibility product. Account for accessibility, realistic content, and at least one non-happy path.
+
+265. [Advanced] [Dashboards & internal tools] Design a dashboard for monitoring performance across multiple locations for a remote work product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+266. [Beginner] [Dashboards & internal tools] Design an approval queue where reviewers need enough context to act quickly for a education product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+267. [Intermediate] [Dashboards & internal tools] Design a role-management screen for assigning granular permissions for a event planning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+268. [Advanced] [Dashboards & internal tools] Design an audit-log experience that helps users investigate what changed and why for a pet care product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+269. [Beginner] [Dashboards & internal tools] Design a dashboard that surfaces anomalies without overwhelming users with alerts for a logistics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+270. [Intermediate] [Dashboards & internal tools] Design an internal tool for creating and managing reusable templates for a subscription management product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+271. [Advanced] [Dashboards & internal tools] Design a case-management workspace with status, owner, history, and next action for a grocery shopping product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+272. [Beginner] [Dashboards & internal tools] Design an analytics dashboard that moves from overview to diagnosis for a healthcare scheduling product. Limit yourself to one core user goal and keep the information architecture simple.
+
+273. [Intermediate] [Dashboards & internal tools] Design an inventory tool that highlights shortages, delays, and recommended actions for a project management product. Account for accessibility, realistic content, and at least one non-happy path.
+
+274. [Advanced] [Dashboards & internal tools] Design a scheduling dashboard for teams, resources, and conflicts for a freelancing product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+275. [Beginner] [Dashboards & internal tools] Design an operations dashboard that makes exceptions more prominent than normal activity for a HR product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+276. [Intermediate] [Dashboards & internal tools] Design an admin table with filtering, sorting, saved views, and bulk actions for a language learning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+277. [Advanced] [Dashboards & internal tools] Design a dashboard for monitoring performance across multiple locations for a personal finance product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+278. [Beginner] [Dashboards & internal tools] Design an approval queue where reviewers need enough context to act quickly for a sports analytics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+279. [Intermediate] [Dashboards & internal tools] Design a role-management screen for assigning granular permissions for a public transit product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+280. [Advanced] [Dashboards & internal tools] Design an audit-log experience that helps users investigate what changed and why for a insurance product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+281. [Beginner] [Dashboards & internal tools] Design a dashboard that surfaces anomalies without overwhelming users with alerts for a manufacturing product. Limit yourself to one core user goal and keep the information architecture simple.
+
+282. [Intermediate] [Dashboards & internal tools] Design an internal tool for creating and managing reusable templates for a accessibility product. Account for accessibility, realistic content, and at least one non-happy path.
+
+283. [Advanced] [Dashboards & internal tools] Design a case-management workspace with status, owner, history, and next action for a remote work product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+284. [Beginner] [Dashboards & internal tools] Design an analytics dashboard that moves from overview to diagnosis for a education product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+285. [Intermediate] [Dashboards & internal tools] Design an inventory tool that highlights shortages, delays, and recommended actions for a event planning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+286. [Advanced] [Dashboards & internal tools] Design a scheduling dashboard for teams, resources, and conflicts for a pet care product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+287. [Beginner] [Dashboards & internal tools] Design an operations dashboard that makes exceptions more prominent than normal activity for a legal workflows product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+288. [Intermediate] [Dashboards & internal tools] Design an admin table with filtering, sorting, saved views, and bulk actions for a weather product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+289. [Advanced] [Dashboards & internal tools] Design a dashboard for monitoring performance across multiple locations for a music discovery product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+290. [Beginner] [Dashboards & internal tools] Design an approval queue where reviewers need enough context to act quickly for a gaming product. Limit yourself to one core user goal and keep the information architecture simple.
+
+291. [Intermediate] [Dashboards & internal tools] Design a role-management screen for assigning granular permissions for a sustainability product. Account for accessibility, realistic content, and at least one non-happy path.
+
+292. [Advanced] [Dashboards & internal tools] Design an audit-log experience that helps users investigate what changed and why for a real estate product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+293. [Beginner] [Dashboards & internal tools] Design a dashboard that surfaces anomalies without overwhelming users with alerts for a HR product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+294. [Intermediate] [Dashboards & internal tools] Design an internal tool for creating and managing reusable templates for a language learning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+295. [Advanced] [Dashboards & internal tools] Design a case-management workspace with status, owner, history, and next action for a personal finance product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+296. [Beginner] [Dashboards & internal tools] Design an analytics dashboard that moves from overview to diagnosis for a sports analytics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+297. [Intermediate] [Dashboards & internal tools] Design an inventory tool that highlights shortages, delays, and recommended actions for a public transit product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+298. [Advanced] [Dashboards & internal tools] Design a scheduling dashboard for teams, resources, and conflicts for a insurance product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+299. [Beginner] [Dashboards & internal tools] Design an operations dashboard that makes exceptions more prominent than normal activity for a banking product. Limit yourself to one core user goal and keep the information architecture simple.
+
+300. [Intermediate] [Dashboards & internal tools] Design an admin table with filtering, sorting, saved views, and bulk actions for a car ownership product. Account for accessibility, realistic content, and at least one non-happy path.
+
+301. [Advanced] [Dashboards & internal tools] Design a dashboard for monitoring performance across multiple locations for a fitness coaching product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+302. [Beginner] [Dashboards & internal tools] Design an approval queue where reviewers need enough context to act quickly for a e-commerce product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+303. [Intermediate] [Dashboards & internal tools] Design a role-management screen for assigning granular permissions for a home organization product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+304. [Advanced] [Dashboards & internal tools] Design an audit-log experience that helps users investigate what changed and why for a nonprofit fundraising product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+305. [Beginner] [Dashboards & internal tools] Design a dashboard that surfaces anomalies without overwhelming users with alerts for a legal workflows product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+306. [Intermediate] [Dashboards & internal tools] Design an internal tool for creating and managing reusable templates for a weather product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+307. [Advanced] [Dashboards & internal tools] Design a case-management workspace with status, owner, history, and next action for a music discovery product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+308. [Beginner] [Dashboards & internal tools] Design an analytics dashboard that moves from overview to diagnosis for a gaming product. Limit yourself to one core user goal and keep the information architecture simple.
+
+309. [Intermediate] [Dashboards & internal tools] Design an inventory tool that highlights shortages, delays, and recommended actions for a sustainability product. Account for accessibility, realistic content, and at least one non-happy path.
+
+310. [Advanced] [Dashboards & internal tools] Design a scheduling dashboard for teams, resources, and conflicts for a real estate product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+311. [Beginner] [Dashboards & internal tools] Design an operations dashboard that makes exceptions more prominent than normal activity for a social communities product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+312. [Intermediate] [Dashboards & internal tools] Design an admin table with filtering, sorting, saved views, and bulk actions for a hotel booking product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+313. [Advanced] [Dashboards & internal tools] Design a dashboard for monitoring performance across multiple locations for a meal planning product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+314. [Beginner] [Dashboards & internal tools] Design an approval queue where reviewers need enough context to act quickly for a creator tools product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+315. [Intermediate] [Dashboards & internal tools] Design a role-management screen for assigning granular permissions for a reading product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+316. [Beginner] [Components] Design a reusable dropdown that handles search, groups, long labels, and disabled options for a creator tools product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+317. [Intermediate] [Components] Design a date picker that works for both single dates and ranges for a reading product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+318. [Advanced] [Components] Design a file-upload component with progress, validation, retry, and failure states for a cybersecurity product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+319. [Beginner] [Components] Design a toast system for success, warning, error, and undoable actions for a banking product. Limit yourself to one core user goal and keep the information architecture simple.
+
+320. [Intermediate] [Components] Design a data-table component with responsive behavior and row actions for a car ownership product. Account for accessibility, realistic content, and at least one non-happy path.
+
+321. [Advanced] [Components] Design a bottom sheet with collapsed, expanded, loading, and error states for a fitness coaching product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+322. [Beginner] [Components] Design a stepper component for a process that allows users to revisit completed steps for a e-commerce product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+323. [Intermediate] [Components] Design a search field with autocomplete, recent items, loading, and no-results states for a home organization product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+324. [Advanced] [Components] Design a card component that supports several content densities without becoming inconsistent for a nonprofit fundraising product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+325. [Beginner] [Components] Design a notification component with priority, actions, timestamps, and read states for a legal workflows product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+326. [Intermediate] [Components] Design an input component with helper text, validation, character count, and accessibility states for a weather product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+327. [Advanced] [Components] Design a reusable dropdown that handles search, groups, long labels, and disabled options for a travel planning product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+328. [Beginner] [Components] Design a date picker that works for both single dates and ranges for a AI productivity product. Limit yourself to one core user goal and keep the information architecture simple.
+
+329. [Intermediate] [Components] Design a file-upload component with progress, validation, retry, and failure states for a job searching product. Account for accessibility, realistic content, and at least one non-happy path.
+
+330. [Advanced] [Components] Design a toast system for success, warning, error, and undoable actions for a customer support product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+331. [Beginner] [Components] Design a data-table component with responsive behavior and row actions for a social communities product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+332. [Intermediate] [Components] Design a bottom sheet with collapsed, expanded, loading, and error states for a hotel booking product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+333. [Advanced] [Components] Design a stepper component for a process that allows users to revisit completed steps for a meal planning product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+334. [Beginner] [Components] Design a search field with autocomplete, recent items, loading, and no-results states for a creator tools product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+335. [Intermediate] [Components] Design a card component that supports several content densities without becoming inconsistent for a reading product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+336. [Advanced] [Components] Design a notification component with priority, actions, timestamps, and read states for a cybersecurity product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+337. [Beginner] [Components] Design an input component with helper text, validation, character count, and accessibility states for a banking product. Limit yourself to one core user goal and keep the information architecture simple.
+
+338. [Intermediate] [Components] Design a reusable dropdown that handles search, groups, long labels, and disabled options for a grocery shopping product. Account for accessibility, realistic content, and at least one non-happy path.
+
+339. [Advanced] [Components] Design a date picker that works for both single dates and ranges for a healthcare scheduling product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+340. [Beginner] [Components] Design a file-upload component with progress, validation, retry, and failure states for a project management product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+341. [Intermediate] [Components] Design a toast system for success, warning, error, and undoable actions for a freelancing product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+342. [Advanced] [Components] Design a data-table component with responsive behavior and row actions for a restaurant operations product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+343. [Beginner] [Components] Design a bottom sheet with collapsed, expanded, loading, and error states for a photo management product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+344. [Intermediate] [Components] Design a stepper component for a process that allows users to revisit completed steps for a beauty services product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+345. [Advanced] [Components] Design a search field with autocomplete, recent items, loading, and no-results states for a travel planning product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+346. [Beginner] [Components] Design a card component that supports several content densities without becoming inconsistent for a AI productivity product. Limit yourself to one core user goal and keep the information architecture simple.
+
+347. [Intermediate] [Components] Design a notification component with priority, actions, timestamps, and read states for a job searching product. Account for accessibility, realistic content, and at least one non-happy path.
+
+348. [Advanced] [Components] Design an input component with helper text, validation, character count, and accessibility states for a customer support product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+349. [Beginner] [Components] Design a reusable dropdown that handles search, groups, long labels, and disabled options for a accessibility product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+350. [Intermediate] [Components] Design a date picker that works for both single dates and ranges for a remote work product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+351. [Advanced] [Components] Design a file-upload component with progress, validation, retry, and failure states for a education product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+352. [Beginner] [Components] Design a toast system for success, warning, error, and undoable actions for a event planning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+353. [Intermediate] [Components] Design a data-table component with responsive behavior and row actions for a pet care product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+354. [Advanced] [Components] Design a bottom sheet with collapsed, expanded, loading, and error states for a logistics product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+355. [Beginner] [Components] Design a stepper component for a process that allows users to revisit completed steps for a subscription management product. Limit yourself to one core user goal and keep the information architecture simple.
+
+356. [Intermediate] [Components] Design a search field with autocomplete, recent items, loading, and no-results states for a grocery shopping product. Account for accessibility, realistic content, and at least one non-happy path.
+
+357. [Advanced] [Components] Design a card component that supports several content densities without becoming inconsistent for a healthcare scheduling product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+358. [Beginner] [Components] Design a notification component with priority, actions, timestamps, and read states for a project management product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+359. [Intermediate] [Components] Design an input component with helper text, validation, character count, and accessibility states for a freelancing product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+360. [Advanced] [Components] Design a reusable dropdown that handles search, groups, long labels, and disabled options for a HR product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+361. [Beginner] [Components] Design a date picker that works for both single dates and ranges for a language learning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+362. [Intermediate] [Components] Design a file-upload component with progress, validation, retry, and failure states for a personal finance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+363. [Advanced] [Components] Design a toast system for success, warning, error, and undoable actions for a sports analytics product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+364. [Beginner] [Components] Design a data-table component with responsive behavior and row actions for a public transit product. Limit yourself to one core user goal and keep the information architecture simple.
+
+365. [Intermediate] [Components] Design a bottom sheet with collapsed, expanded, loading, and error states for a insurance product. Account for accessibility, realistic content, and at least one non-happy path.
+
+366. [Advanced] [Components] Design a stepper component for a process that allows users to revisit completed steps for a manufacturing product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+367. [Beginner] [Components] Design a search field with autocomplete, recent items, loading, and no-results states for a accessibility product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+368. [Intermediate] [Components] Design a card component that supports several content densities without becoming inconsistent for a remote work product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+369. [Advanced] [Components] Design a notification component with priority, actions, timestamps, and read states for a education product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+370. [Beginner] [Components] Design an input component with helper text, validation, character count, and accessibility states for a event planning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+371. [Beginner] [Motion & interactions] Design the transition between a list item and its detail view for a insurance product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+372. [Intermediate] [Motion & interactions] Create a loading interaction that communicates progress without a fake percentage for a manufacturing product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+373. [Advanced] [Motion & interactions] Design microinteractions for saving, unsaving, and confirming an item for a accessibility product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+374. [Beginner] [Motion & interactions] Animate a bottom sheet so hierarchy and spatial relationships remain clear for a remote work product. Limit yourself to one core user goal and keep the information architecture simple.
+
+375. [Intermediate] [Motion & interactions] Design a drag-and-drop interaction with clear pickup, target, success, and error feedback for a education product. Account for accessibility, realistic content, and at least one non-happy path.
+
+376. [Advanced] [Motion & interactions] Create a motion concept for switching between compact and expanded views for a event planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+377. [Beginner] [Motion & interactions] Design an interaction for reordering items that works with pointer and keyboard input for a pet care product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+378. [Intermediate] [Motion & interactions] Create a button interaction covering hover, press, loading, success, and disabled states for a logistics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+379. [Advanced] [Motion & interactions] Design an optimistic interaction for a task that may fail after the UI updates for a subscription management product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+380. [Beginner] [Motion & interactions] Create a motion sequence that introduces a new feature without blocking the user's task for a grocery shopping product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+381. [Intermediate] [Motion & interactions] Design a gesture-driven mobile interaction with an obvious non-gesture alternative for a healthcare scheduling product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+382. [Advanced] [Motion & interactions] Animate a chart update so users can understand what changed for a project management product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+383. [Beginner] [Motion & interactions] Design the transition between a list item and its detail view for a real estate product. Limit yourself to one core user goal and keep the information architecture simple.
+
+384. [Intermediate] [Motion & interactions] Create a loading interaction that communicates progress without a fake percentage for a HR product. Account for accessibility, realistic content, and at least one non-happy path.
+
+385. [Advanced] [Motion & interactions] Design microinteractions for saving, unsaving, and confirming an item for a language learning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+386. [Beginner] [Motion & interactions] Animate a bottom sheet so hierarchy and spatial relationships remain clear for a personal finance product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+387. [Intermediate] [Motion & interactions] Design a drag-and-drop interaction with clear pickup, target, success, and error feedback for a sports analytics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+388. [Advanced] [Motion & interactions] Create a motion concept for switching between compact and expanded views for a public transit product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+389. [Beginner] [Motion & interactions] Design an interaction for reordering items that works with pointer and keyboard input for a insurance product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+390. [Intermediate] [Motion & interactions] Create a button interaction covering hover, press, loading, success, and disabled states for a manufacturing product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+391. [Advanced] [Motion & interactions] Design an optimistic interaction for a task that may fail after the UI updates for a accessibility product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+392. [Beginner] [Motion & interactions] Create a motion sequence that introduces a new feature without blocking the user's task for a remote work product. Limit yourself to one core user goal and keep the information architecture simple.
+
+393. [Intermediate] [Motion & interactions] Design a gesture-driven mobile interaction with an obvious non-gesture alternative for a education product. Account for accessibility, realistic content, and at least one non-happy path.
+
+394. [Advanced] [Motion & interactions] Animate a chart update so users can understand what changed for a event planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+395. [Beginner] [Motion & interactions] Design the transition between a list item and its detail view for a nonprofit fundraising product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+396. [Intermediate] [Motion & interactions] Create a loading interaction that communicates progress without a fake percentage for a legal workflows product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+397. [Advanced] [Motion & interactions] Design microinteractions for saving, unsaving, and confirming an item for a weather product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+398. [Beginner] [Motion & interactions] Animate a bottom sheet so hierarchy and spatial relationships remain clear for a music discovery product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+399. [Intermediate] [Motion & interactions] Design a drag-and-drop interaction with clear pickup, target, success, and error feedback for a gaming product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+400. [Advanced] [Motion & interactions] Create a motion concept for switching between compact and expanded views for a sustainability product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+401. [Beginner] [Motion & interactions] Design an interaction for reordering items that works with pointer and keyboard input for a real estate product. Limit yourself to one core user goal and keep the information architecture simple.
+
+402. [Intermediate] [Motion & interactions] Create a button interaction covering hover, press, loading, success, and disabled states for a HR product. Account for accessibility, realistic content, and at least one non-happy path.
+
+403. [Advanced] [Motion & interactions] Design an optimistic interaction for a task that may fail after the UI updates for a language learning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+404. [Beginner] [Motion & interactions] Create a motion sequence that introduces a new feature without blocking the user's task for a personal finance product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+405. [Intermediate] [Motion & interactions] Design a gesture-driven mobile interaction with an obvious non-gesture alternative for a sports analytics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+406. [Advanced] [Motion & interactions] Animate a chart update so users can understand what changed for a public transit product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+407. [Beginner] [Motion & interactions] Design the transition between a list item and its detail view for a cybersecurity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+408. [Intermediate] [Motion & interactions] Create a loading interaction that communicates progress without a fake percentage for a banking product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+409. [Advanced] [Motion & interactions] Design microinteractions for saving, unsaving, and confirming an item for a car ownership product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+410. [Beginner] [Motion & interactions] Animate a bottom sheet so hierarchy and spatial relationships remain clear for a fitness coaching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+411. [Intermediate] [Motion & interactions] Design a drag-and-drop interaction with clear pickup, target, success, and error feedback for a e-commerce product. Account for accessibility, realistic content, and at least one non-happy path.
+
+412. [Advanced] [Motion & interactions] Create a motion concept for switching between compact and expanded views for a home organization product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+413. [Beginner] [Motion & interactions] Design an interaction for reordering items that works with pointer and keyboard input for a nonprofit fundraising product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+414. [Intermediate] [Motion & interactions] Create a button interaction covering hover, press, loading, success, and disabled states for a legal workflows product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+415. [Advanced] [Motion & interactions] Design an optimistic interaction for a task that may fail after the UI updates for a weather product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+416. [Beginner] [Motion & interactions] Create a motion sequence that introduces a new feature without blocking the user's task for a music discovery product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+417. [Intermediate] [Motion & interactions] Design a gesture-driven mobile interaction with an obvious non-gesture alternative for a gaming product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+418. [Advanced] [Motion & interactions] Animate a chart update so users can understand what changed for a sustainability product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+419. [Beginner] [Motion & interactions] Design the transition between a list item and its detail view for a customer support product. Limit yourself to one core user goal and keep the information architecture simple.
+
+420. [Intermediate] [Motion & interactions] Create a loading interaction that communicates progress without a fake percentage for a social communities product. Account for accessibility, realistic content, and at least one non-happy path.
+
+421. [Advanced] [Motion & interactions] Design microinteractions for saving, unsaving, and confirming an item for a hotel booking product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+422. [Beginner] [Motion & interactions] Animate a bottom sheet so hierarchy and spatial relationships remain clear for a meal planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+423. [Intermediate] [Motion & interactions] Design a drag-and-drop interaction with clear pickup, target, success, and error feedback for a creator tools product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+424. [Advanced] [Motion & interactions] Create a motion concept for switching between compact and expanded views for a reading product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+425. [Beginner] [Motion & interactions] Design an interaction for reordering items that works with pointer and keyboard input for a cybersecurity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+426. [Intermediate] [Motion & interactions] Create a button interaction covering hover, press, loading, success, and disabled states for a banking product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+427. [Advanced] [Motion & interactions] Design an optimistic interaction for a task that may fail after the UI updates for a car ownership product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+428. [Beginner] [Motion & interactions] Create a motion sequence that introduces a new feature without blocking the user's task for a fitness coaching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+429. [Intermediate] [Motion & interactions] Design a gesture-driven mobile interaction with an obvious non-gesture alternative for a e-commerce product. Account for accessibility, realistic content, and at least one non-happy path.
+
+430. [Advanced] [Motion & interactions] Animate a chart update so users can understand what changed for a home organization product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+431. [Beginner] [FigJam & UX artifacts] Create a journey map that reveals emotional highs, friction, and opportunity areas for a insurance product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+432. [Intermediate] [FigJam & UX artifacts] Create a service blueprint connecting user actions to frontstage and backstage processes for a manufacturing product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+433. [Advanced] [FigJam & UX artifacts] Build an affinity map from 25 fictional interview observations and synthesize five themes for a accessibility product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+434. [Beginner] [FigJam & UX artifacts] Create a task flow for a high-stakes workflow with alternate and failure paths for a remote work product. Limit yourself to one core user goal and keep the information architecture simple.
+
+435. [Intermediate] [FigJam & UX artifacts] Create an information architecture map for a product with several user roles for a education product. Account for accessibility, realistic content, and at least one non-happy path.
+
+436. [Advanced] [FigJam & UX artifacts] Build a prioritization matrix balancing user value, business value, effort, and risk for a event planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+437. [Beginner] [FigJam & UX artifacts] Create a workshop board for aligning a cross-functional team on a vague product problem for a pet care product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+438. [Intermediate] [FigJam & UX artifacts] Create a storyboard showing the user's context before, during, and after using a product for a logistics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+439. [Advanced] [FigJam & UX artifacts] Build an assumption map that separates evidence from team beliefs for a subscription management product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+440. [Beginner] [FigJam & UX artifacts] Create a journey map that reveals emotional highs, friction, and opportunity areas for a music discovery product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+441. [Intermediate] [FigJam & UX artifacts] Create a service blueprint connecting user actions to frontstage and backstage processes for a gaming product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+442. [Advanced] [FigJam & UX artifacts] Build an affinity map from 25 fictional interview observations and synthesize five themes for a sustainability product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+443. [Beginner] [FigJam & UX artifacts] Create a task flow for a high-stakes workflow with alternate and failure paths for a real estate product. Limit yourself to one core user goal and keep the information architecture simple.
+
+444. [Intermediate] [FigJam & UX artifacts] Create an information architecture map for a product with several user roles for a HR product. Account for accessibility, realistic content, and at least one non-happy path.
+
+445. [Advanced] [FigJam & UX artifacts] Build a prioritization matrix balancing user value, business value, effort, and risk for a language learning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+446. [Beginner] [FigJam & UX artifacts] Create a workshop board for aligning a cross-functional team on a vague product problem for a personal finance product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+447. [Intermediate] [FigJam & UX artifacts] Create a storyboard showing the user's context before, during, and after using a product for a sports analytics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+448. [Advanced] [FigJam & UX artifacts] Build an assumption map that separates evidence from team beliefs for a public transit product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+449. [Beginner] [FigJam & UX artifacts] Create a journey map that reveals emotional highs, friction, and opportunity areas for a cybersecurity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+450. [Intermediate] [FigJam & UX artifacts] Create a service blueprint connecting user actions to frontstage and backstage processes for a banking product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+451. [Advanced] [FigJam & UX artifacts] Build an affinity map from 25 fictional interview observations and synthesize five themes for a car ownership product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+452. [Beginner] [FigJam & UX artifacts] Create a task flow for a high-stakes workflow with alternate and failure paths for a fitness coaching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+453. [Intermediate] [FigJam & UX artifacts] Create an information architecture map for a product with several user roles for a e-commerce product. Account for accessibility, realistic content, and at least one non-happy path.
+
+454. [Advanced] [FigJam & UX artifacts] Build a prioritization matrix balancing user value, business value, effort, and risk for a home organization product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+455. [Beginner] [FigJam & UX artifacts] Create a workshop board for aligning a cross-functional team on a vague product problem for a nonprofit fundraising product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+456. [Intermediate] [FigJam & UX artifacts] Create a storyboard showing the user's context before, during, and after using a product for a legal workflows product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+457. [Advanced] [FigJam & UX artifacts] Build an assumption map that separates evidence from team beliefs for a weather product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+458. [Beginner] [FigJam & UX artifacts] Create a journey map that reveals emotional highs, friction, and opportunity areas for a travel planning product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+459. [Intermediate] [FigJam & UX artifacts] Create a service blueprint connecting user actions to frontstage and backstage processes for a AI productivity product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+460. [Advanced] [FigJam & UX artifacts] Build an affinity map from 25 fictional interview observations and synthesize five themes for a job searching product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+461. [Beginner] [FigJam & UX artifacts] Create a task flow for a high-stakes workflow with alternate and failure paths for a customer support product. Limit yourself to one core user goal and keep the information architecture simple.
+
+462. [Intermediate] [FigJam & UX artifacts] Create an information architecture map for a product with several user roles for a social communities product. Account for accessibility, realistic content, and at least one non-happy path.
+
+463. [Advanced] [FigJam & UX artifacts] Build a prioritization matrix balancing user value, business value, effort, and risk for a hotel booking product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+464. [Beginner] [FigJam & UX artifacts] Create a workshop board for aligning a cross-functional team on a vague product problem for a meal planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+465. [Intermediate] [FigJam & UX artifacts] Create a storyboard showing the user's context before, during, and after using a product for a creator tools product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+466. [Advanced] [FigJam & UX artifacts] Build an assumption map that separates evidence from team beliefs for a reading product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+467. [Beginner] [FigJam & UX artifacts] Create a journey map that reveals emotional highs, friction, and opportunity areas for a logistics product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+468. [Intermediate] [FigJam & UX artifacts] Create a service blueprint connecting user actions to frontstage and backstage processes for a subscription management product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+469. [Advanced] [FigJam & UX artifacts] Build an affinity map from 25 fictional interview observations and synthesize five themes for a grocery shopping product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+470. [Beginner] [FigJam & UX artifacts] Create a task flow for a high-stakes workflow with alternate and failure paths for a healthcare scheduling product. Limit yourself to one core user goal and keep the information architecture simple.
+
+471. [Intermediate] [FigJam & UX artifacts] Create an information architecture map for a product with several user roles for a project management product. Account for accessibility, realistic content, and at least one non-happy path.
+
+472. [Advanced] [FigJam & UX artifacts] Build a prioritization matrix balancing user value, business value, effort, and risk for a freelancing product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+473. [Beginner] [FigJam & UX artifacts] Create a workshop board for aligning a cross-functional team on a vague product problem for a restaurant operations product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+474. [Intermediate] [FigJam & UX artifacts] Create a storyboard showing the user's context before, during, and after using a product for a photo management product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+475. [Advanced] [FigJam & UX artifacts] Build an assumption map that separates evidence from team beliefs for a beauty services product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+476. [Beginner] [Design systems] Define a semantic color-token structure that supports light and dark themes for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+477. [Intermediate] [Design systems] Create a typography system for dense product UI and marketing pages for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+478. [Advanced] [Design systems] Design a spacing and sizing scale, then apply it to three components for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+479. [Beginner] [Design systems] Build a button component family with variants, sizes, states, and accessibility guidance for a accessibility product. Limit yourself to one core user goal and keep the information architecture simple.
+
+480. [Intermediate] [Design systems] Create form-field patterns covering labels, hints, errors, optional fields, and validation for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+481. [Advanced] [Design systems] Design a component contribution process for a growing product team for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+482. [Beginner] [Design systems] Create guidelines for elevation, overlays, and layered surfaces for a event planning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+483. [Intermediate] [Design systems] Design a responsive grid system for product and marketing contexts for a pet care product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+484. [Advanced] [Design systems] Audit a fictional UI kit for inconsistencies and propose a migration plan for a logistics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+485. [Beginner] [Design systems] Define a semantic color-token structure that supports light and dark themes for a weather product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+486. [Intermediate] [Design systems] Create a typography system for dense product UI and marketing pages for a music discovery product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+487. [Advanced] [Design systems] Design a spacing and sizing scale, then apply it to three components for a gaming product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+488. [Beginner] [Design systems] Build a button component family with variants, sizes, states, and accessibility guidance for a sustainability product. Limit yourself to one core user goal and keep the information architecture simple.
+
+489. [Intermediate] [Design systems] Create form-field patterns covering labels, hints, errors, optional fields, and validation for a real estate product. Account for accessibility, realistic content, and at least one non-happy path.
+
+490. [Advanced] [Design systems] Design a component contribution process for a growing product team for a HR product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+491. [Beginner] [Design systems] Create guidelines for elevation, overlays, and layered surfaces for a language learning product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+492. [Intermediate] [Design systems] Design a responsive grid system for product and marketing contexts for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+493. [Advanced] [Design systems] Audit a fictional UI kit for inconsistencies and propose a migration plan for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+494. [Beginner] [Design systems] Define a semantic color-token structure that supports light and dark themes for a reading product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+495. [Intermediate] [Design systems] Create a typography system for dense product UI and marketing pages for a cybersecurity product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+496. [Advanced] [Design systems] Design a spacing and sizing scale, then apply it to three components for a banking product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+497. [Beginner] [Design systems] Build a button component family with variants, sizes, states, and accessibility guidance for a car ownership product. Limit yourself to one core user goal and keep the information architecture simple.
+
+498. [Intermediate] [Design systems] Create form-field patterns covering labels, hints, errors, optional fields, and validation for a fitness coaching product. Account for accessibility, realistic content, and at least one non-happy path.
+
+499. [Advanced] [Design systems] Design a component contribution process for a growing product team for a e-commerce product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+500. [Beginner] [Design systems] Create guidelines for elevation, overlays, and layered surfaces for a home organization product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+501. [Intermediate] [Design systems] Design a responsive grid system for product and marketing contexts for a nonprofit fundraising product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+502. [Advanced] [Design systems] Audit a fictional UI kit for inconsistencies and propose a migration plan for a legal workflows product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+503. [Beginner] [Design systems] Define a semantic color-token structure that supports light and dark themes for a beauty services product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+504. [Intermediate] [Design systems] Create a typography system for dense product UI and marketing pages for a travel planning product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+505. [Advanced] [Design systems] Design a spacing and sizing scale, then apply it to three components for a AI productivity product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+506. [Beginner] [Design systems] Build a button component family with variants, sizes, states, and accessibility guidance for a job searching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+507. [Intermediate] [Design systems] Create form-field patterns covering labels, hints, errors, optional fields, and validation for a customer support product. Account for accessibility, realistic content, and at least one non-happy path.
+
+508. [Advanced] [Design systems] Design a component contribution process for a growing product team for a social communities product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+509. [Beginner] [Design systems] Create guidelines for elevation, overlays, and layered surfaces for a hotel booking product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+510. [Intermediate] [Design systems] Design a responsive grid system for product and marketing contexts for a meal planning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+511. [Advanced] [Design systems] Audit a fictional UI kit for inconsistencies and propose a migration plan for a creator tools product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+512. [Beginner] [Design systems] Define a semantic color-token structure that supports light and dark themes for a pet care product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+513. [Intermediate] [Design systems] Create a typography system for dense product UI and marketing pages for a logistics product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+514. [Advanced] [Design systems] Design a spacing and sizing scale, then apply it to three components for a subscription management product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+515. [Beginner] [Design systems] Build a button component family with variants, sizes, states, and accessibility guidance for a grocery shopping product. Limit yourself to one core user goal and keep the information architecture simple.
+
+516. [Intermediate] [Design systems] Create form-field patterns covering labels, hints, errors, optional fields, and validation for a healthcare scheduling product. Account for accessibility, realistic content, and at least one non-happy path.
+
+517. [Advanced] [Design systems] Design a component contribution process for a growing product team for a project management product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+518. [Beginner] [Design systems] Create guidelines for elevation, overlays, and layered surfaces for a freelancing product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+519. [Intermediate] [Design systems] Design a responsive grid system for product and marketing contexts for a restaurant operations product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+520. [Advanced] [Design systems] Audit a fictional UI kit for inconsistencies and propose a migration plan for a photo management product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+521. [Beginner] [Data visualization] Design a chart that helps users compare performance across categories and time for a job searching product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+522. [Intermediate] [Data visualization] Design a visualization for showing progress toward a target with uncertainty for a customer support product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+523. [Advanced] [Data visualization] Turn a dense KPI table into a hierarchy of useful visualizations for a social communities product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+524. [Beginner] [Data visualization] Design a chart for spotting anomalies across a long time series for a hotel booking product. Limit yourself to one core user goal and keep the information architecture simple.
+
+525. [Intermediate] [Data visualization] Design a mobile-friendly visualization for comparing five options for a meal planning product. Account for accessibility, realistic content, and at least one non-happy path.
+
+526. [Advanced] [Data visualization] Create an accessible visualization that does not rely on color alone for a creator tools product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+527. [Beginner] [Data visualization] Design a visualization for part-to-whole data where a pie chart would be misleading for a reading product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+528. [Intermediate] [Data visualization] Design an interactive chart with hover, filtering, zoom, and annotation states for a cybersecurity product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+529. [Advanced] [Data visualization] Design a small-multiples view for comparing the same metric across groups for a banking product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+530. [Beginner] [Data visualization] Design a chart that helps users compare performance across categories and time for a grocery shopping product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+531. [Intermediate] [Data visualization] Design a visualization for showing progress toward a target with uncertainty for a healthcare scheduling product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+532. [Advanced] [Data visualization] Turn a dense KPI table into a hierarchy of useful visualizations for a project management product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+533. [Beginner] [Data visualization] Design a chart for spotting anomalies across a long time series for a freelancing product. Limit yourself to one core user goal and keep the information architecture simple.
+
+534. [Intermediate] [Data visualization] Design a mobile-friendly visualization for comparing five options for a restaurant operations product. Account for accessibility, realistic content, and at least one non-happy path.
+
+535. [Advanced] [Data visualization] Create an accessible visualization that does not rely on color alone for a photo management product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+536. [Beginner] [Data visualization] Design a visualization for part-to-whole data where a pie chart would be misleading for a beauty services product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+537. [Intermediate] [Data visualization] Design an interactive chart with hover, filtering, zoom, and annotation states for a travel planning product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+538. [Advanced] [Data visualization] Design a small-multiples view for comparing the same metric across groups for a AI productivity product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+539. [Beginner] [Data visualization] Design a chart that helps users compare performance across categories and time for a insurance product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+540. [Intermediate] [Data visualization] Design a visualization for showing progress toward a target with uncertainty for a manufacturing product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+541. [Advanced] [Data visualization] Turn a dense KPI table into a hierarchy of useful visualizations for a accessibility product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+542. [Beginner] [Data visualization] Design a chart for spotting anomalies across a long time series for a remote work product. Limit yourself to one core user goal and keep the information architecture simple.
+
+543. [Intermediate] [Data visualization] Design a mobile-friendly visualization for comparing five options for a education product. Account for accessibility, realistic content, and at least one non-happy path.
+
+544. [Advanced] [Data visualization] Create an accessible visualization that does not rely on color alone for a event planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+545. [Beginner] [Data visualization] Design a visualization for part-to-whole data where a pie chart would be misleading for a pet care product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+546. [Intermediate] [Data visualization] Design an interactive chart with hover, filtering, zoom, and annotation states for a logistics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+547. [Advanced] [Data visualization] Design a small-multiples view for comparing the same metric across groups for a subscription management product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+548. [Beginner] [Data visualization] Design a chart that helps users compare performance across categories and time for a music discovery product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+549. [Intermediate] [Data visualization] Design a visualization for showing progress toward a target with uncertainty for a gaming product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+550. [Advanced] [Data visualization] Turn a dense KPI table into a hierarchy of useful visualizations for a sustainability product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+551. [Beginner] [Data visualization] Design a chart for spotting anomalies across a long time series for a real estate product. Limit yourself to one core user goal and keep the information architecture simple.
+
+552. [Intermediate] [Data visualization] Design a mobile-friendly visualization for comparing five options for a HR product. Account for accessibility, realistic content, and at least one non-happy path.
+
+553. [Advanced] [Data visualization] Create an accessible visualization that does not rely on color alone for a language learning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+554. [Beginner] [Data visualization] Design a visualization for part-to-whole data where a pie chart would be misleading for a personal finance product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+555. [Intermediate] [Data visualization] Design an interactive chart with hover, filtering, zoom, and annotation states for a sports analytics product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+556. [Advanced] [Data visualization] Design a small-multiples view for comparing the same metric across groups for a public transit product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+557. [Beginner] [Data visualization] Design a chart that helps users compare performance across categories and time for a cybersecurity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+558. [Intermediate] [Data visualization] Design a visualization for showing progress toward a target with uncertainty for a banking product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+559. [Advanced] [Data visualization] Turn a dense KPI table into a hierarchy of useful visualizations for a car ownership product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+560. [Beginner] [Data visualization] Design a chart for spotting anomalies across a long time series for a fitness coaching product. Limit yourself to one core user goal and keep the information architecture simple.
+
+561. [Intermediate] [Data visualization] Design a mobile-friendly visualization for comparing five options for a e-commerce product. Account for accessibility, realistic content, and at least one non-happy path.
+
+562. [Advanced] [Data visualization] Create an accessible visualization that does not rely on color alone for a home organization product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+563. [Beginner] [Data visualization] Design a visualization for part-to-whole data where a pie chart would be misleading for a nonprofit fundraising product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+564. [Intermediate] [Data visualization] Design an interactive chart with hover, filtering, zoom, and annotation states for a legal workflows product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+565. [Advanced] [Data visualization] Design a small-multiples view for comparing the same metric across groups for a weather product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+566. [Beginner] [UX research] Write a research plan to understand why users abandon a key workflow for a AI productivity product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+567. [Intermediate] [UX research] Create a usability-test plan for a prototype with five critical tasks for a job searching product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+568. [Advanced] [UX research] Design an interview guide that explores behavior without leading participants for a customer support product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+569. [Beginner] [UX research] Turn a vague stakeholder question into research questions and an appropriate method for a social communities product. Limit yourself to one core user goal and keep the information architecture simple.
+
+570. [Intermediate] [UX research] Create a survey that measures a behavior without relying on satisfaction alone for a hotel booking product. Account for accessibility, realistic content, and at least one non-happy path.
+
+571. [Advanced] [UX research] Plan a diary study for a behavior that unfolds across several days for a meal planning product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+572. [Beginner] [UX research] Synthesize fictional findings into insights, evidence, opportunities, and open questions for a creator tools product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+573. [Intermediate] [UX research] Design a research repository structure that makes findings reusable for a reading product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+574. [Advanced] [UX research] Write a research plan to understand why users abandon a key workflow for a logistics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+575. [Beginner] [UX research] Create a usability-test plan for a prototype with five critical tasks for a subscription management product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+576. [Intermediate] [UX research] Design an interview guide that explores behavior without leading participants for a grocery shopping product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+577. [Advanced] [UX research] Turn a vague stakeholder question into research questions and an appropriate method for a healthcare scheduling product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+578. [Beginner] [UX research] Create a survey that measures a behavior without relying on satisfaction alone for a project management product. Limit yourself to one core user goal and keep the information architecture simple.
+
+579. [Intermediate] [UX research] Plan a diary study for a behavior that unfolds across several days for a freelancing product. Account for accessibility, realistic content, and at least one non-happy path.
+
+580. [Advanced] [UX research] Synthesize fictional findings into insights, evidence, opportunities, and open questions for a restaurant operations product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+581. [Beginner] [UX research] Design a research repository structure that makes findings reusable for a photo management product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+582. [Intermediate] [UX research] Write a research plan to understand why users abandon a key workflow for a personal finance product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+583. [Advanced] [UX research] Create a usability-test plan for a prototype with five critical tasks for a sports analytics product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+584. [Beginner] [UX research] Design an interview guide that explores behavior without leading participants for a public transit product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+585. [Intermediate] [UX research] Turn a vague stakeholder question into research questions and an appropriate method for a insurance product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+586. [Advanced] [UX research] Create a survey that measures a behavior without relying on satisfaction alone for a manufacturing product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+587. [Beginner] [UX research] Plan a diary study for a behavior that unfolds across several days for a accessibility product. Limit yourself to one core user goal and keep the information architecture simple.
+
+588. [Intermediate] [UX research] Synthesize fictional findings into insights, evidence, opportunities, and open questions for a remote work product. Account for accessibility, realistic content, and at least one non-happy path.
+
+589. [Advanced] [UX research] Design a research repository structure that makes findings reusable for a education product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+590. [Beginner] [UX research] Write a research plan to understand why users abandon a key workflow for a home organization product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+591. [Intermediate] [UX research] Create a usability-test plan for a prototype with five critical tasks for a nonprofit fundraising product. Create a small clickable prototype and document the reasoning behind two key decisions.
+
+592. [Advanced] [UX research] Design an interview guide that explores behavior without leading participants for a legal workflows product. Design the system, not just the screen: define rules, states, responsive behavior, and how it scales.
+
+593. [Beginner] [UX research] Turn a vague stakeholder question into research questions and an appropriate method for a weather product. Focus on hierarchy, spacing, typography, and one obvious primary action.
+
+594. [Intermediate] [UX research] Create a survey that measures a behavior without relying on satisfaction alone for a music discovery product. Include empty, loading, error, success, and edge-case states, plus responsive behavior.
+
+595. [Advanced] [UX research] Plan a diary study for a behavior that unfolds across several days for a gaming product. Support multiple roles, ambiguous data, accessibility, edge cases, and a scalable component strategy.
+
+596. [Beginner] [UX research] Synthesize fictional findings into insights, evidence, opportunities, and open questions for a sustainability product. Limit yourself to one core user goal and keep the information architecture simple.
+
+597. [Intermediate] [UX research] Design a research repository structure that makes findings reusable for a real estate product. Account for accessibility, realistic content, and at least one non-happy path.
+
+598. [Advanced] [UX research] Write a research plan to understand why users abandon a key workflow for a social communities product. Include tradeoffs, failure recovery, power-user behavior, and measurable success criteria.
+
+599. [Beginner] [UX research] Create a usability-test plan for a prototype with five critical tasks for a hotel booking product. Use an 8-point spacing system and define all major UI states before polishing visuals.
+
+600. [Intermediate] [UX research] Design an interview guide that explores behavior without leading participants for a meal planning product. Create a small clickable prototype and document the reasoning behind two key decisions.

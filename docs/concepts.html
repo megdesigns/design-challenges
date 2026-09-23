@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f4ef; --ink: #111111; --card: #ffffff; --soft: #e7ebd9; --acc: #c6f432; --acc-ink: #1d2a00;
+      --line: color-mix(in srgb, var(--ink) 12%, transparent);
+      --muted: color-mix(in srgb, var(--ink) 58%, transparent);
+      --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+      --spring: cubic-bezier(0.34, 1.4, 0.5, 1);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body { background: var(--bg); color: var(--ink); font-family: "Plus Jakarta Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; transition: background 300ms, color 300ms; overflow-x: hidden; }
+    button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
+    .ti { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+    /* ---------- Concept switcher ---------- */
+    .switcher { position: sticky; top: 0; z-index: 50; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; padding: 12px 16px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .seg { display: flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); overflow-x: auto; max-width: 100%; }
+    .seg button { padding: 7px 13px; border-radius: 999px; font-size: 13px; font-weight: 700; white-space: nowrap; color: var(--muted); }
+    .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+    .pals { display: flex; gap: 6px; }
+    .pal { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--card); outline: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; padding: 0; }
+    .pal[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 2px; }
+    .pal i { display: block; }
+    .label { font-size: 12px; font-weight: 700; color: var(--muted); margin-right: 4px; }
+
+    .view { display: none; min-height: calc(100vh - 62px); }
+    .view.active { display: block; }
+
+    /* ---------- Shared bits ---------- */
+    .tag { display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--acc); color: var(--acc-ink); }
+    .lvl { font-size: 12px; font-weight: 700; color: var(--muted); }
+    .round { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: var(--card); border: 1px solid var(--line); transition: transform 160ms var(--ease); }
+    .round:active { transform: scale(0.92); }
+    .round.like { background: var(--acc); color: var(--acc-ink); border-color: transparent; width: 68px; height: 68px; }
+    .round .ti { width: 24px; height: 24px; }
+    .toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); opacity: 0; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; font-weight: 700; transition: 200ms var(--ease); pointer-events: none; z-index: 99; }
+    .toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+    .brief h4 { margin: 0 0 8px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .brief ul { margin: 0 0 18px; padding: 0; list-style: none; display: grid; gap: 8px; }
+    .brief .think li { padding-left: 16px; position: relative; font-size: 14.5px; line-height: 1.45; }
+    .brief .think li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 7px; height: 7px; border-radius: 2px; background: var(--acc); outline: 1px solid color-mix(in srgb, var(--ink) 20%, transparent); }
+    .brief .avoid { margin: 0 0 18px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, #e5484d 12%, transparent); font-size: 14px; line-height: 1.45; }
+    .brief .checks label { display: flex; gap: 10px; font-size: 14px; line-height: 1.4; cursor: pointer; }
+    .brief .checks input { accent-color: var(--ink); width: 17px; height: 17px; margin: 1px 0 0; flex: none; }
+    .brief .checks input:checked + span { text-decoration: line-through; color: var(--muted); }
+    .brief .meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+    .brief .meta span { font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: var(--soft); }
+
+    /* ---------- 1. Swipe deck ---------- */
+    #deck { display: none; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 28px 16px 40px; }
+    #deck.active { display: flex; }
+    .deck-cats { display: flex; gap: 6px; overflow-x: auto; max-width: min(720px, 100%); padding-bottom: 2px; scrollbar-width: none; }
+    .deck-cats button { padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 13px; font-weight: 700; white-space: nowrap; }
+    .deck-cats button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .stack { position: relative; width: min(420px, 100%); height: 480px; perspective: 1400px; }
+    .dcard { position: absolute; inset: 0; transition: transform 420ms var(--ease), opacity 300ms; touch-action: none; user-select: none; }
+    .dcard .flip { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform 620ms var(--spring); }
+    .dcard.flipped .flip { transform: rotateY(180deg); }
+    .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 26px; background: var(--card); border: 1px solid var(--line); padding: 26px; display: flex; flex-direction: column; box-shadow: 0 30px 60px -30px color-mix(in srgb, var(--ink) 35%, transparent); overflow: hidden; }
+    .face.back { transform: rotateY(180deg); overflow-y: auto; }
+    .face .top { display: flex; justify-content: space-between; align-items: center; }
+    .face h2 { margin: auto 0 0; font-size: clamp(26px, 6vw, 34px); line-height: 1.06; letter-spacing: -0.035em; font-weight: 800; }
+    .face .for { margin: 12px 0 18px; font-size: 16px; font-weight: 600; color: var(--muted); }
+    .face .for b { color: var(--ink); background: var(--acc); padding: 0 4px; border-radius: 4px; color: var(--acc-ink); }
+    .face .twist { font-size: 13.5px; line-height: 1.45; padding: 12px 14px; border-radius: 14px; background: var(--soft); }
+    .face .back-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .face .back-head strong { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+    .stamp { position: absolute; top: 28px; padding: 6px 14px; border-radius: 10px; border: 3px solid; font-size: 20px; font-weight: 800; letter-spacing: 0.04em; opacity: 0; z-index: 3; }
+    .stamp.yes { left: 24px; color: var(--acc-ink); background: var(--acc); border-color: var(--acc-ink); transform: rotate(-10deg); }
+    .stamp.no { right: 24px; color: #d13b40; border-color: #d13b40; transform: rotate(10deg); }
+    .dcard[data-depth="1"] { transform: translateY(14px) scale(0.95); }
+    .dcard[data-depth="2"] { transform: translateY(28px) scale(0.9); opacity: 0.7; }
+    .dcard[data-depth="3"] { transform: translateY(28px) scale(0.9); opacity: 0; }
+    .dcard.dragging { transition: none; }
+    .deck-actions { display: flex; align-items: center; gap: 18px; }
+    .deck-hint { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+
+    /* ---------- 2. Poster ---------- */
+    #poster { position: relative; min-height: calc(100vh - 62px); transition: background 500ms var(--ease), color 500ms var(--ease); overflow: hidden; }
+    .p-inner { max-width: 1200px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) clamp(20px, 5vw, 64px) 140px; min-height: calc(100vh - 62px); display: flex; flex-direction: column; }
+    .p-meta { display: flex; gap: 14px; font-size: 13px; font-weight: 700; opacity: 0.75; }
+    .p-title { margin: auto 0 0; font-size: clamp(40px, 8.4vw, 118px); line-height: 0.95; letter-spacing: -0.055em; font-weight: 800; text-wrap: balance; }
+    .p-title .word { display: inline-block; animation: rise 600ms var(--ease) both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(40px); } }
+    .p-for { margin: 22px 0 0; font-size: clamp(18px, 2.4vw, 28px); font-weight: 600; opacity: 0.85; }
+    .p-twist { margin: 14px 0 0; max-width: 56ch; font-size: 15px; line-height: 1.5; opacity: 0.7; }
+    .dock { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; gap: 4px; padding: 6px; border-radius: 999px; background: var(--ink); color: var(--bg); z-index: 40; box-shadow: 0 20px 40px -20px rgba(0,0,0,.5); }
+    .dock button { display: flex; align-items: center; gap: 7px; padding: 11px 16px; border-radius: 999px; font-size: 14px; font-weight: 700; }
+    .dock button.primary { background: var(--bg); color: var(--ink); }
+    .dock button[aria-pressed="true"] .ti { fill: currentColor; }
+    .menu { position: fixed; left: 50%; bottom: 84px; transform: translate(-50%, 10px); opacity: 0; pointer-events: none; width: min(360px, calc(100% - 32px)); background: var(--card); color: var(--ink); border-radius: 18px; padding: 8px; display: grid; gap: 2px; z-index: 41; box-shadow: 0 30px 60px -20px rgba(0,0,0,.35); transition: 200ms var(--ease); max-height: 60vh; overflow-y: auto; }
+    .menu.on { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+    .menu button { text-align: left; padding: 10px 12px; border-radius: 10px; font-size: 14px; font-weight: 600; }
+    .menu button:hover { background: var(--soft); }
+    .menu button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+    .sheet { position: fixed; left: 50%; bottom: 0; width: min(560px, 100%); transform: translate(-50%, 105%); background: var(--card); color: var(--ink); border-radius: 26px 26px 0 0; padding: 10px 24px 100px; z-index: 39; transition: transform 420ms var(--ease); max-height: 80vh; overflow-y: auto; box-shadow: 0 -30px 60px -30px rgba(0,0,0,.4); }
+    .sheet.on { transform: translate(-50%, 0); }
+    .grab { width: 40px; height: 5px; border-radius: 99px; background: var(--line); margin: 0 auto 16px; }
+    .sheet h3 { margin: 0 0 14px; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
+
+    /* ---------- 3. Slot machine ---------- */
+    #slots { padding: clamp(24px, 5vw, 56px) 16px 60px; }
+    .machine { width: min(760px, 100%); margin: 0 auto; background: var(--ink); color: var(--bg); border-radius: 30px; padding: 18px; display: grid; gap: 10px; }
+    .reel { position: relative; border-radius: 18px; background: var(--card); color: var(--ink); overflow: hidden; }
+    .reel .lab { position: absolute; top: 12px; left: 18px; z-index: 2; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .reel.accent { background: var(--acc); color: var(--acc-ink); }
+    .reel.accent .lab { color: color-mix(in srgb, var(--acc-ink) 65%, transparent); }
+    .strip { will-change: transform; }
+    .strip div { display: flex; align-items: flex-end; padding: 34px 18px 16px; overflow: hidden; }
+    .reel.r1 { height: 170px; } .reel.r2 { height: 92px; } .reel.r3 { height: 112px; }
+    .reel.r1 .strip div { height: 170px; font-size: clamp(20px, 3.6vw, 32px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.08; }
+    .reel.r2 .strip div { height: 92px; font-size: clamp(20px, 3vw, 26px); font-weight: 800; letter-spacing: -0.02em; }
+    .reel.r3 .strip div { height: 112px; font-size: 15px; font-weight: 600; line-height: 1.4; }
+    .reel::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(var(--card), transparent 18%, transparent 82%, var(--card)); opacity: 0; transition: opacity 200ms; }
+    .reel.spinning::after { opacity: 0.9; }
+    .reel.accent::after { background: linear-gradient(var(--acc), transparent 18%, transparent 82%, var(--acc)); }
+    .controls { display: flex; gap: 10px; align-items: center; justify-content: space-between; padding: 6px 4px 0; flex-wrap: wrap; }
+    .controls .left { display: flex; gap: 8px; }
+    .pillbtn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; font-weight: 800; font-size: 15px; }
+    .spin { background: var(--acc); color: var(--acc-ink); padding: 14px 26px; font-size: 16px; }
+    .spin:active { transform: scale(0.97); }
+    .ghost { background: color-mix(in srgb, var(--bg) 14%, transparent); color: var(--bg); }
+    .ghost[aria-pressed="true"] { background: var(--bg); color: var(--ink); }
+    .ghost[aria-pressed="true"] .ti { fill: currentColor; }
+    .slot-brief { width: min(760px, 100%); margin: 16px auto 0; background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 24px; display: none; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .slot-brief.on { display: grid; animation: rise 500ms var(--ease) both; }
+    .slot-brief ul, .slot-brief .avoid { margin-bottom: 0; }
+    @media (max-width: 700px) { .slot-brief { grid-template-columns: 1fr; } }
+
+    /* ---------- 4. Workbench ---------- */
+    #bench { padding: 20px 16px 40px; }
+    .bench { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 200px minmax(0, 1fr) 340px; gap: 14px; min-height: calc(100vh - 124px); }
+    .rail { display: grid; gap: 2px; align-content: start; position: sticky; top: 80px; }
+    .rail h5, .levels h5 { margin: 0 0 6px; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 0 10px; }
+    .rail button { text-align: left; padding: 9px 10px; border-radius: 10px; font-size: 14px; font-weight: 600; color: var(--muted); }
+    .rail button:hover { color: var(--ink); background: var(--soft); }
+    .rail button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+    .levels { margin-top: 18px; display: grid; gap: 2px; }
+    .b-card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: clamp(22px, 3vw, 40px); display: flex; flex-direction: column; gap: 22px; }
+    .b-card h2 { margin: auto 0 0; font-size: clamp(30px, 3.8vw, 52px); line-height: 1.04; letter-spacing: -0.045em; font-weight: 800; }
+    .b-card .for { margin: -8px 0 0; font-size: 19px; font-weight: 600; color: var(--muted); }
+    .b-card .for b { color: var(--ink); }
+    .b-card .twist { padding: 14px 16px; border-radius: 14px; background: var(--soft); font-size: 15px; line-height: 1.5; }
+    .b-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .b-actions button { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 18px; border-radius: 14px; font-weight: 800; border: 1px solid var(--line); }
+    .b-actions .go { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .b-actions .lk[aria-pressed="true"] { background: var(--acc); color: var(--acc-ink); border-color: transparent; }
+    .b-actions .lk[aria-pressed="true"] .ti { fill: currentColor; }
+    .b-brief { position: relative; background: var(--soft); border-radius: 24px; padding: 24px; overflow: hidden; }
+    .b-brief > h3 { margin: 0 0 16px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; }
+    .b-brief .brief { transition: filter 400ms var(--ease), opacity 400ms; }
+    .b-brief.locked .brief { filter: blur(7px); opacity: 0.55; pointer-events: none; user-select: none; }
+    .lock { position: absolute; inset: 0; display: none; place-items: center; text-align: center; padding: 24px; }
+    .b-brief.locked .lock { display: grid; }
+    .lock div { background: var(--card); border-radius: 18px; padding: 18px 20px; font-size: 14px; font-weight: 600; box-shadow: 0 20px 40px -20px rgba(0,0,0,.3); }
+    .lock b { display: block; font-size: 16px; margin-bottom: 4px; }
+    @media (max-width: 1000px) { .bench { grid-template-columns: 1fr; } .rail { position: static; display: flex; overflow-x: auto; } .rail h5, .levels { display: none; } .rail button { white-space: nowrap; } }
+  </style>
+</head>
+<body>
+  <nav class="switcher">
+    <div class="seg" id="layoutSeg">
+      <button data-v="deck" aria-pressed="true">Swipe deck</button>
+      <button data-v="poster" aria-pressed="false">Poster</button>
+      <button data-v="slots" aria-pressed="false">Slot machine</button>
+      <button data-v="bench" aria-pressed="false">Workbench</button>
+    </div>
+    <div class="pals" id="pals"><span class="label">Palette</span></div>
+  </nav>
+
+  <!-- 1. Swipe deck -->
+  <section class="view active" id="deck">
+    <div class="deck-cats" id="deckCats"></div>
+    <div class="stack" id="stack"></div>
+    <div class="deck-actions">
+      <button class="round" id="dSkip" aria-label="Skip"><svg class="ti" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <button class="round like" id="dLike" aria-label="Like"><svg class="ti" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.6a4.3 4.3 0 017.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg></button>
+      <button class="round" id="dFlip" aria-label="Flip card"><svg class="ti" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0113.7-5.6L20 8.7M20 4v4.7h-4.7M20 12a8 8 0 01-13.7 5.6L4 15.3M4 20v-4.7h4.7"/></svg></button>
+    </div>
+    <p class="deck-hint">Drag the card: right to like, left to skip. Or use ← → keys.</p>
+  </section>
+
+  <!-- 2. Poster -->
+  <section class="view" id="poster">
+    <div class="p-inner">
+      <div class="p-meta"><span id="pCat"></span><span id="pLvl"></span></div>
+      <h1 class="p-title" id="pTitle"></h1>
+      <p class="p-for" id="pFor"></p>
+      <p class="p-twist" id="pTwist"></p>
+    </div>
+    <div class="menu" id="pMenu"></div>
+    <div class="sheet" id="pSheet"><div class="grab"></div><h3>Your brief</h3><div id="pBrief"></div></div>
+    <div class="dock" id="pDock">
+      <button class="primary" id="pNext"><svg class="ti" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Next</button>
+      <button id="pLike" aria-pressed="false"><svg class="ti" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.6a4.3 4.3 0 017.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>Like</button>
+      <button id="pFilter"><svg class="ti" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filter</button>
+    </div>
+  </section>
+
+  <!-- 3. Slot machine -->
+  <section class="view" id="slots">
+    <div class="machine">
+      <div class="reel r1"><span class="lab">Design</span><div class="strip" id="s1"></div></div>
+      <div class="reel r2 accent"><span class="lab">For</span><div class="strip" id="s2"></div></div>
+      <div class="reel r3"><span class="lab">Twist</span><div class="strip" id="s3"></div></div>
+      <div class="controls">
+        <div class="left">
+          <button class="pillbtn ghost" id="sLike" aria-pressed="false"><svg class="ti" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.6a4.3 4.3 0 017.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>Like</button>
+          <button class="pillbtn ghost" id="sCat">All categories</button>
+        </div>
+        <button class="pillbtn spin" id="sSpin">Spin <svg class="ti" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0113.7-5.6L20 8.7M20 4v4.7h-4.7"/></svg></button>
+      </div>
+    </div>
+    <div class="slot-brief brief" id="sBrief"></div>
+  </section>
+
+  <!-- 4. Workbench -->
+  <section class="view" id="bench">
+    <div class="bench">
+      <aside class="rail" id="bRail"></aside>
+      <article class="b-card">
+        <div class="top" style="display:flex;justify-content:space-between;align-items:center"><span class="tag" id="bCat"></span><span class="lvl" id="bLvl"></span></div>
+        <h2 id="bTitle"></h2>
+        <p class="for" id="bFor"></p>
+        <p class="twist" id="bTwist"></p>
+        <div class="b-actions">
+          <button class="go" id="bNext"><svg class="ti" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Next challenge</button>
+          <button class="lk" id="bLike" aria-pressed="false"><svg class="ti" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.6a4.3 4.3 0 017.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>Like</button>
+        </div>
+      </article>
+      <aside class="b-brief locked" id="bBriefWrap">
+        <h3>Brief</h3>
+        <div class="brief" id="bBrief"></div>
+        <div class="lock"><div><b>Like it to unlock the brief</b>What to think about, what to avoid, and when you're done.</div></div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="toast" id="toast"></div>
+
+<script src="lib/prompts.js"></script>
+<script src="lib/brief.js"></script>
+<script src="lib/api.js"></script>
+<script>
+// Layout explorations kept for reference. Prototype only: likes live in memory.
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const HEART = '<svg class="ti" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.6a4.3 4.3 0 017.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>';
+
+  // Prototype only: likes live in memory, nothing is saved.
+  const liked = new Set();
+  const seen = [];
+  let category = "all";
+  let categories = [];
+
+  const PALETTES = {
+    Lime:     ["#f4f4ef", "#111111", "#ffffff", "#e7ebd9", "#c6f432", "#1d2a00"],
+    Forest:   ["#eef3ee", "#0e2a1f", "#ffffff", "#d3e6da", "#1f6f4a", "#ffffff"],
+    Plum:     ["#f6f2fb", "#231532", "#ffffff", "#e6ddf7", "#7446d9", "#ffffff"],
+    Butter:   ["#fff8de", "#1a1a1a", "#ffffff", "#f6e7a8", "#ffd43b", "#3d2e00"],
+    Rose:     ["#fbf1f1", "#2a1216", "#ffffff", "#f4d9dc", "#d6456b", "#ffffff"],
+    Graphite: ["#16171a", "#f1f1ee", "#222429", "#2c2f36", "#e8e4d8", "#16171a"],
+  };
+  let palette = "Lime";
+
+  function applyPalette(name) {
+    palette = name;
+    const [bg, ink, card, soft, acc, accInk] = PALETTES[name];
+    const r = document.documentElement.style;
+    r.setProperty("--bg", bg); r.setProperty("--ink", ink); r.setProperty("--card", card);
+    r.setProperty("--soft", soft); r.setProperty("--acc", acc); r.setProperty("--acc-ink", accInk);
+    document.querySelectorAll(".pal").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.p === name)));
+    if (current.poster) paintPoster(current.poster);
+  }
+
+  $("#pals").insertAdjacentHTML("beforeend", Object.entries(PALETTES).map(([n, c]) =>
+    `<button class="pal" data-p="${n}" title="${n}" aria-label="${n} palette" aria-pressed="false"><i style="background:${c[1]}"></i><i style="background:${c[4]}"></i></button>`).join(""));
+  document.querySelectorAll(".pal").forEach((b) => b.addEventListener("click", () => applyPalette(b.dataset.p)));
+
+  // ---------- data (same in-browser data layer as the main app) ----------
+  let handle = null;
+  async function api(path, method = "GET", body) {
+    if (!handle) {
+      const text = await fetch("600_design_practice_prompts.txt").then((r) => r.text());
+      const library = DCGPrompts.createLibrary(DCGPrompts.parse(text));
+      let memory = {};
+      handle = DCGApi.createHandler({ getLibrary: () => library, buildBrief: DCGBrief.buildBrief, likes: { read: () => memory, write: (l) => (memory = l) } });
+    }
+    return (await handle(method, path, body)).data;
+  }
+  async function draw() {
+    const { challenge } = await api("/challenges/random", "POST", { category, difficulty: "all", seen: seen.slice(-400) });
+    seen.push(challenge.id);
+    return challenge;
+  }
+  const briefCache = new Map();
+  async function brief(id) {
+    if (!briefCache.has(id)) briefCache.set(id, await api(`/challenges/${id}/brief`));
+    return briefCache.get(id);
+  }
+  const domainHtml = (c, tag = "b") => c.domain ? `for ${esc(c.domainLabel.split(" ")[0])} <${tag}>${esc(c.domain)}</${tag}> product` : "";
+
+  function briefHtml(b, { meta = true } = {}) {
+    return `${meta ? `<div class="meta"><span>${esc(b.time)}</span><span>${esc(b.deliverable)}</span></div>` : ""}
+      <div><h4>Think about</h4><ul class="think">${b.think.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>
+      <div><h4>Avoid</h4><p class="avoid">${esc(b.avoid)}</p></div>
+      <div><h4>Done when</h4><ul class="checks">${b.checklist.map((t) => `<li><label><input type="checkbox"/><span>${esc(t)}</span></label></li>`).join("")}</ul></div>`;
+  }
+
+  function toast(msg) {
+    const t = $("#toast"); t.textContent = msg; t.classList.add("on");
+    clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 1600);
+  }
+
+  const current = {};
+
+  // ---------- switcher ----------
+  let view = "deck";
+  const inits = {};
+  document.querySelectorAll("#layoutSeg button").forEach((b) => b.addEventListener("click", () => {
+    view = b.dataset.v;
+    document.querySelectorAll("#layoutSeg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    document.querySelectorAll(".view").forEach((v) => v.classList.toggle("active", v.id === view));
+    if (!inits[view]) { inits[view] = true; ({ deck: initDeck, poster: initPoster, slots: initSlots, bench: initBench })[view](); }
+  }));
+
+  function catButtons(active) {
+    return [{ slug: "all", name: "All" }, ...categories].map((c) => `<button data-c="${c.slug}" aria-pressed="${c.slug === active}">${esc(c.name)}</button>`).join("");
+  }
+
+  // ================= 1. Swipe deck =================
+  const queue = [];
+  async function initDeck() {
+    renderDeckCats();
+    queue.length = 0;
+    $("#stack").innerHTML = "";
+    for (let i = 0; i < 4; i++) queue.push(await draw());
+    renderStack();
+  }
+  function renderDeckCats() {
+    $("#deckCats").innerHTML = catButtons(category);
+    $("#deckCats").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { category = b.dataset.c; initDeck(); }));
+  }
+  function cardHtml(c) {
+    return `<div class="flip">
+      <div class="face front">
+        <span class="stamp yes">LIKE</span><span class="stamp no">SKIP</span>
+        <div class="top"><span class="tag">${esc(c.category)}</span><span class="lvl">${esc(c.difficulty)}</span></div>
+        <h2>${esc(c.task)}</h2>
+        <p class="for">${domainHtml(c)}</p>
+        <p class="twist">${esc(c.constraint)}</p>
+      </div>
+      <div class="face back brief"><div class="back-head"><strong>Your brief</strong><button class="tag next-card" type="button">Next card →</button></div><div class="bbody">Loading…</div></div>
+    </div>`;
+  }
+  function renderStack() {
+    const stack = $("#stack");
+    const existing = [...stack.children].filter((n) => !n.classList.contains("leaving"));
+    queue.slice(0, 4).forEach((c, i) => {
+      let el = existing.find((n) => Number(n.dataset.id) === c.id);
+      if (!el) {
+        el = document.createElement("div");
+        el.className = "dcard"; el.dataset.id = c.id; el.innerHTML = cardHtml(c);
+        stack.prepend(el);
+      }
+      el.dataset.depth = i;
+      el.style.zIndex = 10 - i;
+    });
+    const top = stack.querySelector('.dcard[data-depth="0"]');
+    if (top && !top.dataset.bound) bindDrag(top);
+  }
+  function bindDrag(el) {
+    el.dataset.bound = "1";
+    let sx = 0, sy = 0, dx = 0, dy = 0, dragging = false;
+    const yes = el.querySelector(".stamp.yes"), no = el.querySelector(".stamp.no");
+    el.addEventListener("pointerdown", (e) => {
+      if (el.classList.contains("flipped") || e.target.closest("input,label")) return;
+      dragging = true; sx = e.clientX; sy = e.clientY; dx = dy = 0;
+      el.classList.add("dragging"); el.setPointerCapture(e.pointerId);
+    });
+    el.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      dx = e.clientX - sx; dy = e.clientY - sy;
+      el.style.transform = `translate(${dx}px, ${dy * 0.3}px) rotate(${dx / 18}deg)`;
+      yes.style.opacity = Math.max(0, Math.min(1, dx / 90));
+      no.style.opacity = Math.max(0, Math.min(1, -dx / 90));
+    });
+    const end = () => {
+      if (!dragging) return;
+      dragging = false; el.classList.remove("dragging");
+      if (dx > 110) return swipe("right");
+      if (dx < -110) return swipe("left");
+      el.style.transform = ""; yes.style.opacity = no.style.opacity = 0;
+    };
+    el.addEventListener("pointerup", end);
+    el.addEventListener("pointercancel", end);
+  }
+  function topCard() { return $('#stack .dcard[data-depth="0"]'); }
+
+  async function swipe(dir) {
+    const el = topCard(); if (!el) return;
+    const c = queue[0];
+    if (dir === "right") {
+      // Like = flip the card to reveal the brief instead of throwing it away.
+      el.style.transform = "";
+      el.querySelector(".stamp.yes").style.opacity = 0;
+      liked.add(c.id);
+      const b = await brief(c.id);
+      el.querySelector(".bbody").innerHTML = briefHtml(b);
+      el.classList.add("flipped");
+      toast("Liked. Brief on the back");
+      return;
+    }
+    el.classList.add("leaving");
+    el.style.transform = `translate(${dir === "left" ? -700 : 700}px, 40px) rotate(${dir === "left" ? -24 : 24}deg)`;
+    el.style.opacity = 0;
+    setTimeout(() => el.remove(), 420);
+    queue.shift();
+    renderStack();
+    queue.push(await draw());
+    renderStack();
+  }
+  async function flip() {
+    const el = topCard(); if (!el) return;
+    if (!el.classList.contains("flipped")) {
+      const b = await brief(queue[0].id);
+      el.querySelector(".bbody").innerHTML = briefHtml(b);
+    }
+    el.classList.toggle("flipped");
+  }
+  $("#dSkip").addEventListener("click", () => {
+    const el = topCard();
+    if (el && el.classList.contains("flipped")) { el.classList.remove("flipped"); setTimeout(() => swipe("left"), 300); }
+    else swipe("left");
+  });
+  $("#dLike").addEventListener("click", () => swipe("right"));
+  $("#dFlip").addEventListener("click", flip);
+  $("#stack").addEventListener("click", (e) => { if (e.target.closest(".next-card")) $("#dSkip").click(); });
+  document.addEventListener("keydown", (e) => {
+    if (view !== "deck") return;
+    if (e.key === "ArrowLeft") $("#dSkip").click();
+    if (e.key === "ArrowRight") swipe("right");
+    if (e.key === "ArrowUp" || e.key === "ArrowDown") flip();
+  });
+
+  // ================= 2. Poster =================
+  function posterColors(c) {
+    const [bg, ink, card, soft, acc, accInk] = PALETTES[palette];
+    const i = Math.max(0, categories.findIndex((x) => x.slug === c.categorySlug));
+    return [[acc, accInk], [ink, bg], [soft, ink], [card, ink]][i % 4];
+  }
+  function paintPoster(c) {
+    const [bgc, fg] = posterColors(c);
+    $("#poster").style.background = bgc; $("#poster").style.color = fg;
+  }
+  async function showPoster() {
+    const c = await draw();
+    current.poster = c;
+    $("#pSheet").classList.remove("on");
+    $("#pLike").setAttribute("aria-pressed", String(liked.has(c.id)));
+    paintPoster(c);
+    $("#pCat").textContent = c.category; $("#pLvl").textContent = c.difficulty;
+    $("#pTitle").innerHTML = c.task.split(" ").map((w, i) => `<span class="word" style="animation-delay:${i * 28}ms">${esc(w)}</span>`).join(" ");
+    $("#pFor").innerHTML = domainHtml(c, "strong");
+    $("#pTwist").textContent = c.constraint;
+  }
+  function initPoster() {
+    renderPosterMenu();
+    showPoster();
+  }
+  function renderPosterMenu() {
+    $("#pMenu").innerHTML = catButtons(category);
+    $("#pMenu").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+      category = b.dataset.c; $("#pMenu").classList.remove("on"); renderPosterMenu(); showPoster();
+    }));
+  }
+  $("#pNext").addEventListener("click", showPoster);
+  $("#pFilter").addEventListener("click", () => { $("#pSheet").classList.remove("on"); $("#pMenu").classList.toggle("on"); });
+  $("#pLike").addEventListener("click", async () => {
+    const c = current.poster; $("#pMenu").classList.remove("on");
+    if (liked.has(c.id)) { liked.delete(c.id); $("#pLike").setAttribute("aria-pressed", "false"); $("#pSheet").classList.remove("on"); return; }
+    liked.add(c.id); $("#pLike").setAttribute("aria-pressed", "true");
+    $("#pBrief").innerHTML = `<div class="brief">${briefHtml(await brief(c.id))}</div>`;
+    $("#pSheet").classList.add("on");
+  });
+  document.addEventListener("keydown", (e) => { if (view === "poster" && (e.key === " " || e.key === "ArrowRight")) { e.preventDefault(); showPoster(); } });
+
+  // ================= 3. Slot machine =================
+  const filler = [];
+  async function initSlots() {
+    for (let i = 0; i < 8; i++) filler.push(await draw());
+    const c = await draw();
+    current.slots = c;
+    setReels(c, false);
+    renderSlotCat();
+  }
+  function renderSlotCat() {
+    const name = category === "all" ? "All categories" : (categories.find((x) => x.slug === category) || {}).name;
+    $("#sCat").textContent = name;
+  }
+  $("#sCat").addEventListener("click", () => {
+    const list = ["all", ...categories.map((c) => c.slug)];
+    category = list[(list.indexOf(category) + 1) % list.length];
+    renderSlotCat();
+  });
+  const reelParts = (c) => [c.task.replace(/^(Design|Create|Build|Write|Plan|Turn|Audit|Animate|Define|Synthesize)\s+/, ""), c.domain ? `${c.domainLabel.split(" ")[0]} ${c.domain} product` : "", c.constraint];
+  function setReels(c, animate) {
+    const target = reelParts(c);
+    [["#s1", 0], ["#s2", 1], ["#s3", 2]].forEach(([sel, k], idx) => {
+      const strip = $(sel);
+      const items = animate ? [...filler.map((f) => reelParts(f)[k]).sort(() => Math.random() - 0.5), target[k]] : [target[k]];
+      strip.innerHTML = items.map((t) => `<div>${esc(t)}</div>`).join("");
+      const reel = strip.parentElement;
+      if (!animate) { strip.style.transition = "none"; strip.style.transform = "translateY(0)"; return; }
+      const h = strip.firstElementChild.offsetHeight;
+      strip.style.transition = "none";
+      strip.style.transform = "translateY(0)";
+      reel.classList.add("spinning");
+      void strip.offsetWidth;
+      const dur = 900 + idx * 450;
+      strip.style.transition = `transform ${dur}ms cubic-bezier(0.15, 0.85, 0.25, 1.04)`;
+      strip.style.transform = `translateY(-${h * (items.length - 1)}px)`;
+      setTimeout(() => reel.classList.remove("spinning"), dur - 150);
+    });
+  }
+  let spinning = false;
+  $("#sSpin").addEventListener("click", async () => {
+    if (spinning) return; spinning = true;
+    $("#sBrief").classList.remove("on");
+    const c = await draw();
+    filler.push(current.slots); if (filler.length > 10) filler.shift();
+    current.slots = c;
+    $("#sLike").setAttribute("aria-pressed", "false");
+    setReels(c, true);
+    setTimeout(() => (spinning = false), 1900);
+  });
+  $("#sLike").addEventListener("click", async () => {
+    const c = current.slots; if (!c) return;
+    const on = $("#sLike").getAttribute("aria-pressed") !== "true";
+    $("#sLike").setAttribute("aria-pressed", String(on));
+    if (!on) { liked.delete(c.id); $("#sBrief").classList.remove("on"); return; }
+    liked.add(c.id);
+    $("#sBrief").innerHTML = briefHtml(await brief(c.id), { meta: false });
+    $("#sBrief").classList.add("on");
+    setTimeout(() => $("#sBrief").scrollIntoView({ behavior: "smooth", block: "nearest" }), 80);
+  });
+  document.addEventListener("keydown", (e) => { if (view === "slots" && e.key === " ") { e.preventDefault(); $("#sSpin").click(); } });
+
+  // ================= 4. Workbench =================
+  function initBench() { renderRail(); showBench(); }
+  function renderRail() {
+    $("#bRail").innerHTML = `<h5>Category</h5>${catButtons(category)}`;
+    $("#bRail").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { category = b.dataset.c; renderRail(); showBench(); }));
+  }
+  async function showBench() {
+    const c = await draw();
+    current.bench = c;
+    $("#bCat").textContent = c.category; $("#bLvl").textContent = c.difficulty;
+    $("#bTitle").textContent = c.task; $("#bFor").innerHTML = domainHtml(c); $("#bTwist").textContent = c.constraint;
+    const isLiked = liked.has(c.id);
+    $("#bLike").setAttribute("aria-pressed", String(isLiked));
+    $("#bBrief").innerHTML = briefHtml(await brief(c.id));
+    $("#bBriefWrap").classList.toggle("locked", !isLiked);
+  }
+  $("#bNext").addEventListener("click", showBench);
+  $("#bLike").addEventListener("click", () => {
+    const c = current.bench; const on = !liked.has(c.id);
+    on ? liked.add(c.id) : liked.delete(c.id);
+    $("#bLike").setAttribute("aria-pressed", String(on));
+    $("#bBriefWrap").classList.toggle("locked", !on);
+  });
+
+  // ---------- boot ----------
+  (async () => {
+    const meta = await api("/meta");
+    categories = meta.categories;
+    applyPalette("Lime");
+    inits.deck = true;
+    initDeck();
+  })();
+})();
+</script>
+</body>
+</html>
